@@ -1,5 +1,7 @@
 # Laboratory of Multi-Agent Systems in Smart Cities and Industry 4.0
 
+*Please find the Russian version [here](README_ru.md)*
+
 > The laboratory specializes in the study of issues of cybernetics and economic theory as applied to communication in multi-agent systems.
 
 Examples of issues to be considered are:
@@ -44,7 +46,7 @@ However, the multitude of autonomous devices that are networked and capable of p
 
 Decentralized technologies such as peer-to-peer networks, blockchains and smart contracts are a promising area of research in this area. They do not have the drawbacks of centralized approaches, make it easier to solve some issues of organizing a multi-agent system, and also already have ways of integrating with the digital economy.
 
-Therefore, within the framework of this laboratory, we propose to investigate aspects of the application of precisely decentralized technologies for managing network CPS. It is supposed to use the open source platform Robonomics, which offers the capabilities of the Ethereum and Polkadot blockchains for robotic devices compatible with the Robot Operating System framework, and uses the market mechanism as the basic way of interaction between devices and humans. The main goal of the laboratory is the application of decentralized technologies for networked cyber-physical systems in various applications.
+Therefore, within the framework of this laboratory, we propose to investigate aspects of the application of precisely decentralized technologies for managing network CPS. It is supposed to use the open source platform [Robonomics](https://robonomics.network/), which offers the capabilities of the Ethereum and Polkadot blockchains for robotic devices compatible with the Robot Operating System framework, and uses the market mechanism as the basic way of interaction between devices and humans. The main goal of the laboratory is the application of decentralized technologies for networked cyber-physical systems in various applications.
 
 ## Relevance to ITMO's prioritized areas
 
@@ -56,7 +58,7 @@ The laboratory focuses on four major areas of research:
 
 *1) Certified measurements of the quality of water resources using unmanned surface vehicles.* 
 
-The main focus is on an environmental monitoring system built on a small fleet of small marine vessels equipped with compact sensors. In this case, the Robnonomics platform is used for secure registration of vessels, their missions and collected data on water samples, thereby ensuring the certification of measurements. Within the framework of the direction, the following issues are investigated:
+The main focus is on an environmental monitoring system built on a small fleet of [small marine vessels](https://www.youtube.com/watch?v=Mtqm5y6Bolo) equipped with compact sensors. In this case, the Robnonomics platform is used for secure registration of vessels, their missions and collected data on water samples, thereby ensuring the certification of measurements. Within the framework of the direction, the following issues are investigated:
 
 * finding and tracking pollution sources, taking into account the computing limitations of devices;
 * construction of pollution maps using unmanned surface vehicles;
@@ -69,7 +71,7 @@ The main focus is on an environmental monitoring system built on a small fleet o
 
 *2) Smart factories for Industry 4.0.*
 
-Smart factories are factories in which autonomous production occurs by collecting, exchanging and using information between people, materials and machines using network technologies. In the final stage, such factories operate without human intervention, independently adjusting their production process based on feedback from product sales. A test bench is available at the faculty, based on the Fischertechnik designer and Siemens controllers, which simulates a smart factory, from the supply of raw materials to the shipment of products from warehouses, depending on the demand for it. The stand allows you to explore the following issues:
+Smart factories are factories in which autonomous production occurs by collecting, exchanging and using information between people, materials and machines using network technologies. In the final stage, such factories operate without human intervention, independently adjusting their production process based on feedback from product sales. A [test bench](https://youtu.be/yuxOF_z70us) is available at the faculty, based on the Fischertechnik designer and Siemens controllers, which simulates a smart factory, from the supply of raw materials to the shipment of products from warehouses, depending on the demand for it. The stand allows you to explore the following issues:
 
 * optimal management of a multi-agent system using market mechanisms;
 * modeling of industrial processes;
@@ -79,7 +81,7 @@ Smart factories are factories in which autonomous production occurs by collectin
 
 *3) The robot artist as an autonomous creative system.*
 
-Autonomous systems that create art objects (or artifacts) have been of interest to researchers since the 1980s, gradually accelerating with the development of image recognition and Simultaneous Localization and Mapping (SLAM) techniques. However, the task of generating a human-independent idea of ​​an artifact - what is called creativity - has begun to advance recently, with the development of neural networks, for example, art in the style of Inceptionism from the Google AI team. The most intriguing thing is the creation of a completely autonomous creative system capable of “inventing” the idea of ​​an artifact, realizing it, presenting it for review, and drawing conclusions from feedback on how to proceed further. The KUKA KR6 R900 manipulator is available to work on this direction at the faculty, which can draw with a brush on canvas. The robot works on the basis of the Robonomics platform, which allows it, for example, to put up paintings for a digital auction. The stand allows you to explore the following issues:
+Autonomous systems that create art objects (or artifacts) have been of interest to researchers since the 1980s, gradually accelerating with the development of image recognition and Simultaneous Localization and Mapping (SLAM) techniques. However, the task of generating a human-independent idea of an artifact - what is called creativity - has begun to advance recently, with the development of neural networks, for example, art in the style of Inceptionism from the Google AI team. The most intriguing thing is the creation of a completely autonomous creative system capable of “inventing” the idea of an artifact, realizing it, presenting it for review, and drawing conclusions from feedback on how to proceed further. The [KUKA KR6 R900](https://www.youtube.com/watch?v=xSD_lsrAA0I) manipulator is available to work on this direction at the faculty, which can draw with a brush on canvas. The robot works on the basis of the Robonomics platform, which allows it, for example, to put up paintings for a digital auction. The stand allows you to explore the following issues:
 
 * solving the inverse problem of kinematics for manipulator control when drawing;
 * the task of web scraping is to extract the data used to generate the idea of the picture;
@@ -88,7 +90,7 @@ Autonomous systems that create art objects (or artifacts) have been of interest 
 
 *4) Digitalization of the state of the infrastructure using a network of sensors.*
 
-The Internet of Things has been actively expanding in the last decade, but it still has significant limitations for ubiquitous use, primarily related to security when connecting smart devices and sensors. Decentralization of governance has the potential to circumvent this limitation, opening the way for decentralized autonomous organizations and even smart cities. This infrastructure has a digital footprint for every facility in the organization, allowing you to analyze health and efficiently manage assets and costs, from electricity consumption to PM10 concentration in offices. Within the framework of this direction, it is planned to investigate:
+The Internet of Things has been actively expanding in the last decade, but it still has significant limitations for ubiquitous use, primarily related to security when connecting smart devices and sensors. Decentralization of governance has the potential to circumvent this limitation, opening the way for decentralized autonomous organizations and even smart cities. This infrastructure has a digital footprint for every facility in the organization, allowing you to [analyze health and efficiently manage](https://youtu.be/shqey3tmNUk) assets and costs, from electricity consumption to PM10 concentration in offices. Within the framework of this direction, it is planned to investigate:
 
 * optimal placement of sensors in rooms to collect data on temperature / humidity / air quality;
 * systems for automatic localization and diagnostics of infrastructure problems;
@@ -107,7 +109,7 @@ The Internet of Things has been actively expanding in the last decade, but it st
 
 ## Team experience
 
-Vadim Manaenko - head of the laboratory, ICT assistant, postgraduate student of the 2nd year of study.
+[Vadim Manaenko](https://github.com/Vourhey) - head of the laboratory, ICT assistant, postgraduate student of the 2nd year of study.
 
 * DevOps engineer of the Airalab team (Robonomics developers) with three years of experience.
 * Team lead of the engineering department of the Robonomics platform.
@@ -123,7 +125,7 @@ Recent projects:
 * A system for registering a digital passport of drones and their flights.
 * Quality control system for chemical products.
 
-Ivan Berman is a scientific administrator, an engineer of CSR, a post-graduate student of the 2nd year of study.
+[Ivan Berman](https://scholar.google.com/citations?user=jo5zE10AAAAJ) is a scientific administrator, an engineer of CSR, a post-graduate student of the 2nd year of study.
 
 * Performer of various research projects on cyber-physical systems and methods of control theory, since 2013.
 * h-index = 5, author of over 10 scientific publications.
@@ -138,7 +140,7 @@ Recent projects:
 * Monitoring the safety of forest areas using UAVs and machine learning methods.
 * Environmental monitoring based on IoT technologies.
 
-Alexander Kapitonov - curator of the laboratory, Ph.D., dean of ICT.
+[Alexander Kapitonov](https://scholar.google.com/citations?user=J3HFpjoAAAAJ) - curator of the laboratory, Ph.D., dean of ICT.
 
 * One of the creators of the concept of "robot economy", the progressor of the Robonomics platform.
 * Scientific supervisor of grants from the Russian Science Foundation, Erasmus +, student design bureaus.
