@@ -1,5 +1,7 @@
 # Laboratory of Multi-Agent Systems in Smart Cities and Industry 4.0
 
+![Lab Logo](images/photo_2021-04-05_21-54-31.jpg "Lab Logo")
+
 *Please find the Russian version [here](README_ru.md)*
 
 > The laboratory specializes in the study of issues of cybernetics and economic theory as applied to communication in multi-agent systems.
@@ -20,7 +22,9 @@ Lab tasks: https://github.com/orgs/airalab/projects/9
 
 ## Name
 
-Robonomics Lab
+Laboratory of Multi-Agent Systems in Smart Cities and Industry 4.0
+
+MASSCI4.0
 
 ## Brief Description
 
