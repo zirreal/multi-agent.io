@@ -2,8 +2,6 @@
 
 ![Lab Logo](images/photo_2021-04-05_21-54-31.jpg "Lab Logo")
 
-*Please find the Russian version [here](README_ru.md)*
-
 > The laboratory specializes in the study of issues of cybernetics and economic theory as applied to communication in multi-agent systems.
 
 Examples of issues to be considered are:
@@ -29,6 +27,47 @@ MASSCI4.0
 ## Brief Description
 
 Laboratory for the study of aspects of the organization of networked cyber-physical systems in autonomous conditions using decentralized technologies
+
+
+## Team experience
+
+[Vadim Manaenko](https://github.com/Vourhey) - head of the laboratory, ICT assistant, postgraduate student of the 2nd year of study.
+
+* DevOps engineer of the Airalab team (Robonomics developers) with three years of experience.
+* Team lead of the engineering department of the Robonomics platform.
+* Experience in decentralized projects since 2017: Ethereum, Tezos, Lightning Network.
+* Knowledge of the Robot Operating System at the package development level.
+* Languages: Python (> 3 years), Rust, Kotlin.
+* Linux: Ubuntu, Arch, NixOS, Bash
+* Experience in conducting master classes, seminars, video lectures.
+
+Recent projects:
+
+* Protocol for issuing green certificates based on data from renewable energy sources.
+* A system for registering a digital passport of drones and their flights.
+* Quality control system for chemical products.
+
+[Ivan Berman](https://scholar.google.com/citations?user=jo5zE10AAAAJ) is a scientific administrator, an engineer of CSR, a post-graduate student of the 2nd year of study.
+
+* Performer of various research projects on cyber-physical systems and methods of control theory, since 2013.
+* h-index = 5, author of over 10 scientific publications.
+* Skills of technical analysis, CPS modeling, research, drawing up specifications and technical documentation.
+* Member of the Student Design Bureau from 2015-2018.
+* Knowledge of Robot Operating System, Matlab + Simulink.
+* Languages: Python, C ++.
+
+Recent projects:
+
+* Methods for controlling the autonomous movement of small-sized robotic swimming facilities.
+* Monitoring the safety of forest areas using UAVs and machine learning methods.
+* Environmental monitoring based on IoT technologies.
+
+[Alexander Kapitonov](https://scholar.google.com/citations?user=J3HFpjoAAAAJ) - curator of the laboratory, Ph.D., dean of ICT.
+
+* One of the creators of the concept of "robot economy", the progressor of the Robonomics platform.
+* Scientific supervisor of grants from the Russian Science Foundation, Erasmus +, student design bureaus.
+* h-index = 11, author of over 30 scientific publications.
+* Regular program participant of the MIT Media Lab Symposium Blockchain for Robotics and AI Systems.
 
 ## Keywords
 
@@ -111,46 +150,6 @@ The Internet of Things has been actively expanding in the last decade, but it st
 * Ability to work with microcontrollers, single board computers and sensor systems.
 * Scientific activity, setting up experiments, design and publication of scientific articles.
 
-## Team experience
-
-[Vadim Manaenko](https://github.com/Vourhey) - head of the laboratory, ICT assistant, postgraduate student of the 2nd year of study.
-
-* DevOps engineer of the Airalab team (Robonomics developers) with three years of experience.
-* Team lead of the engineering department of the Robonomics platform.
-* Experience in decentralized projects since 2017: Ethereum, Tezos, Lightning Network.
-* Knowledge of the Robot Operating System at the package development level.
-* Languages: Python (> 3 years), Rust, Kotlin.
-* Linux: Ubuntu, Arch, NixOS, Bash
-* Experience in conducting master classes, seminars, video lectures.
-
-Recent projects:
-
-* Protocol for issuing green certificates based on data from renewable energy sources.
-* A system for registering a digital passport of drones and their flights.
-* Quality control system for chemical products.
-
-[Ivan Berman](https://scholar.google.com/citations?user=jo5zE10AAAAJ) is a scientific administrator, an engineer of CSR, a post-graduate student of the 2nd year of study.
-
-* Performer of various research projects on cyber-physical systems and methods of control theory, since 2013.
-* h-index = 5, author of over 10 scientific publications.
-* Skills of technical analysis, CPS modeling, research, drawing up specifications and technical documentation.
-* Member of the Student Design Bureau from 2015-2018.
-* Knowledge of Robot Operating System, Matlab + Simulink.
-* Languages: Python, C ++.
-
-Recent projects:
-
-* Methods for controlling the autonomous movement of small-sized robotic swimming facilities.
-* Monitoring the safety of forest areas using UAVs and machine learning methods.
-* Environmental monitoring based on IoT technologies.
-
-[Alexander Kapitonov](https://scholar.google.com/citations?user=J3HFpjoAAAAJ) - curator of the laboratory, Ph.D., dean of ICT.
-
-* One of the creators of the concept of "robot economy", the progressor of the Robonomics platform.
-* Scientific supervisor of grants from the Russian Science Foundation, Erasmus +, student design bureaus.
-* h-index = 11, author of over 30 scientific publications.
-* Regular program participant of the MIT Media Lab Symposium Blockchain for Robotics and AI Systems.
-
 ## First year plan
 
 * Control of an unmanned surface vehicle: an article co-authored with Professor A. S. Matveev with a more accurate mathematical model of the vehicle.
@@ -171,4 +170,6 @@ Recent projects:
 * A. Kapitonov, I. Berman, V. Manaenko, V. Rzhevskiy, V. Bulatov, and A. Zenkin, “Robonomics as a Blockchain-based Platform for Unmanned Traffic Management of Mobile Vehicles,” 2019 Workshop on Research, Education and Development of Unmanned Aerial Systems (RED UAS), Nov. 2019.
 * A. Zenkin, I. Berman, K. Pachkouski, I. Pantiukhin, and V. Rzhevskiy, “Quadcopter Simulation Model for Research of Monitoring Tasks,” 2020 26th Conference of Open Innovations Association (FRUCT), 2020.
 * I. Berman, E. Zereik, A. Kapitonov, F. Bonsignorio, A. Khassanov, A. Oripova, S. Lonshakov, and V. Bulatov, “Trustable Environmental Monitoring by Means of Sensors Networks on Swarming Autonomous Marine Vessels and Distributed Ledger Technology,” Frontiers in Robotics and AI, vol. 7, 2020.
+
+*Please find the Russian version [here](README_ru.md)*
 
