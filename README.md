@@ -1,6 +1,6 @@
 # Laboratory of Multi-Agent Systems in Smart Cities and Industry 4.0
 
-![Lab Logo](images/photo_2021-04-05_21-54-31.jpg "Lab Logo")
+![Lab Logo](images/Laboratory_of_multi_agent.jpg "Lab Logo")
 
 > The laboratory specializes in the study of issues of cybernetics and economic theory as applied to communication in multi-agent systems.
 
