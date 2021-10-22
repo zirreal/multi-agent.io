@@ -14,7 +14,7 @@
       </div>
     </div>
   
-    <video class="video slide-background" autoplay muted >
+    <video class="video slide-background" autoplay muted poster="/cover.png">
       <source src="/cover.webm" type="video/webm">
       <source src="/cover.mp4" type="video/mp4">
       Your browser doesn't support HTML5 video tag.
