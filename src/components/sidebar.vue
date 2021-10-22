@@ -20,7 +20,7 @@
         </p>
 
         <nav>
-            <p>
+            <!-- <p>
                 <g-link :to="localeLink + '/about'">{{$ts('About us')}}</g-link>
             </p>
 
@@ -30,6 +30,18 @@
 
             <p>
                 <g-link :to="localeLink + '/jobs'">{{$ts('Jobs')}}</g-link>
+            </p> -->
+
+            <p>
+                <g-link to="/about">{{$ts('About us')}}</g-link>
+            </p>
+
+            <p>
+                <g-link to="/contacts">{{$ts('Contacts')}}</g-link>
+            </p>
+
+            <p>
+                <g-link to="/jobs">{{$ts('Jobs')}}</g-link>
             </p>
         </nav>
 
