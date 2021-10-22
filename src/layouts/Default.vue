@@ -72,5 +72,9 @@ export default {
   components: {
     sidebar: () => import('../components/sidebar.vue')
   },
+
+  mounted: function(){
+    console.log(this.$locale)
+  }
 }
 </script>
