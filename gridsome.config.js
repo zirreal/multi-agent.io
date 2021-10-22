@@ -20,9 +20,5 @@ module.exports = {
         routes: yaml.load(fs.readFileSync('./src/data/locales/routes.yaml', 'utf8')),
       }
     },
-  ],
-
-  chainWebpack (config) {
-    config.mode('development')
-  }
+  ]
 }
