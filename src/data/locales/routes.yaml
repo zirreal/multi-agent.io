@@ -1,0 +1,19 @@
+- path: '/'
+  component: './src/pages/Index.vue'
+  typename: 'page'
+  
+- path: '/about/'
+  component: './src/pages/About.vue'
+  typename: 'page'
+
+- path: '/contacts/'
+  component: './src/pages/Contacts.vue'
+  typename: 'page'
+
+- path: '/jobs/'
+  component: './src/pages/Jobs.vue'
+  typename: 'page'
+
+# - path: '/blog/'
+#   component: './src/pages/blog.vue'
+#   typename: 'component'
