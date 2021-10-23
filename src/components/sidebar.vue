@@ -19,30 +19,16 @@
             </g-link>
         </p>
 
-        <nav>
-            <!-- <p>
-                <g-link :to="localeLink + '/about'">{{$ts('About us')}}</g-link>
-            </p>
+        <nav v-show="$locale=='en'">
+            <p><g-link to="/about">{{$ts('About us')}}</g-link></p>
+            <p><g-link to="/contacts">{{$ts('Contacts')}}</g-link></p>
+            <p><g-link to="/jobs">{{$ts('Jobs')}}</g-link></p>
+        </nav>
 
-            <p>
-                <g-link :to="localeLink + '/contacts'">{{$ts('Contacts')}}</g-link>
-            </p>
-
-            <p>
-                <g-link :to="localeLink + '/jobs'">{{$ts('Jobs')}}</g-link>
-            </p> -->
-
-            <p>
-                <g-link to="/about">{{$ts('About us')}}</g-link>
-            </p>
-
-            <p>
-                <g-link to="/contacts">{{$ts('Contacts')}}</g-link>
-            </p>
-
-            <p>
-                <g-link to="/jobs">{{$ts('Jobs')}}</g-link>
-            </p>
+        <nav v-show="$locale=='ru'">
+            <p><g-link to="/ru/about">{{$ts('About us')}}</g-link></p>
+            <p><g-link to="/ru/contacts">{{$ts('Contacts')}}</g-link></p>
+            <p><g-link to="/ru/jobs">{{$ts('Jobs')}}</g-link></p>
         </nav>
 
         <languageSwitcher />
@@ -54,12 +40,6 @@ export default {
   components: {
     logo: () => import('../components/logo.vue'),
     languageSwitcher: () => import('../components/languageSwitcher.vue')
-  },
-
-  computed: {
-      localeLink: function () {
-          return (this.$locale == 'en') ? '' : this.$locale
-      }
   }
 }
 </script>
@@ -67,6 +47,7 @@ export default {
 <style scoped>
     .sidebar {
         max-width: var(--sidebarwidth);
+        font-size: var(--font-size-mid);
     }
 
     nav a, .title span {
@@ -87,17 +68,11 @@ export default {
     }
 
     .title {
-        font-weight: 700;
-        font-size: 1.5rem;
         margin: calc(var(--space)*2) 0
     }
 
     .title span {
         transition: 0.2s ease;
-    }
-
-    nav {
-        font-size: var(--font-size-mid);
     }
 
     select {

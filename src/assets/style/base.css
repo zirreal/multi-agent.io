@@ -1,6 +1,19 @@
 html {
-    font-size: 18px;
+    font-size: 110%;
 }
+
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 130%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    html {
+        font-size: 150%;
+    }
+}
+
 
 body {
     font-family: var(--font-family);
@@ -37,6 +50,7 @@ p, li, h2, h3, h4, h5, dd
 
 ul, ol {
     margin-bottom: calc(var(--space) * 3);
+    padding-left: 0.7rem
 }
 
 h2, h3, h4, h5 {
@@ -255,7 +269,7 @@ select {
 
 .isection-image {
     float: right;
-    width: 190px;
+    width: 12rem;
     border-width: 0 0 calc(var(--space)*3) calc(var(--space)*3);
     border-style: solid;
     border-color: var(--color-light);

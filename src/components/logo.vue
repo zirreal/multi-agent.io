@@ -139,7 +139,7 @@ export default {
 
     svg {
         display: inline-block;
-        max-width: 240px;
+        max-width: 15rem;
     }
 
     svg * {

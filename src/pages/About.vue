@@ -45,7 +45,7 @@
       <div class="isection-text">
         <h3><g-link to="https://github.com/Vourhey">{{$ts('Vadim Manaenko')}}</g-link></h3>
         <div class="isection-title">{{$ts('Manaenko_position')}}</div>
-        <div class="isection-desc" v-if="$locale=='en'">
+        <div class="isection-desc" v-show="$locale=='en'">
           <ul>
             <li>DevOps engineer of the Airalab team (Robonomics developers) with three years of experience.</li>
             <li>Team lead of the engineering department of the Robonomics platform.</li>
@@ -63,7 +63,7 @@
           </ul>
         </div>
 
-         <div class="isection-desc" v-if="$locale=='ru'">
+         <div class="isection-desc" v-show="$locale=='ru'">
           <ul>
             <li>DevOps-инженер команды Airalab (разработчики Robonomics) с трехлетним опытом.</li>
             <li>Тимлид инженерного отдела платформы Робономика.</li>
@@ -88,7 +88,7 @@
       <div class="isection-text">
         <h3><g-link to="https://scholar.google.com/citations?user=jo5zE10AAAAJ">{{$ts('Ivan Berman')}}</g-link></h3>
         <div class="isection-title">{{$ts('Berman_position')}}</div>
-        <div class="isection-desc" v-if="$locale=='en'">
+        <div class="isection-desc" v-show="$locale=='en'">
           <ul>
             <li>Performer of various research projects on cyber-physical systems and methods of control theory, since 2013.</li>
             <li>h-index = 5, author of over 10 scientific publications.</li>
@@ -105,7 +105,7 @@
           </ul>
         </div>
 
-        <div class="isection-desc" v-if="$locale=='ru'">
+        <div class="isection-desc" v-show="$locale=='ru'">
           <ul>
             <li>Исполнитель различных НИР, посвященных киберфизическим системам и методам теории управления, с 2013 г.</li>
             <li>h-index = 5, автор более 10 научных публикаций.</li>
@@ -129,7 +129,7 @@
       <div class="isection-text">
         <h3><g-link to="https://scholar.google.com/citations?user=J3HFpjoAAAAJ">{{$ts('Alexander Kapitonov')}}</g-link></h3>
         <div class="isection-title">{{$ts('Kapitonov_position')}}</div>
-        <div class="isection-desc" v-if="$locale=='en'">
+        <div class="isection-desc" v-show="$locale=='en'">
           <ul>
             <li>One of the creators of the concept of “robot economy”, the progressor of the Robonomics platform.</li>
             <li>Scientific supervisor of grants from the Russian Science Foundation, Erasmus +, student design bureaus.</li>
@@ -138,7 +138,7 @@
           </ul>
         </div>
 
-        <div class="isection-desc" v-if="$locale=='ru'">
+        <div class="isection-desc" v-show="$locale=='ru'">
           <ul>
             <li>Один из создателей концепции “экономики роботов”, прогрессор платформы Робономика.</li>
             <li>Научный руководитель грантов РНФ, Erasmus+, студенческих конструкторских бюро.</li>
@@ -151,14 +151,14 @@
 
     <h2>{{$ts('Research area and objectives')}}</h2>
 
-    <div class="text-sea" v-if="$locale=='en'">
+    <div class="text-sea" v-show="$locale=='en'">
       <p>The ongoing large-scale digitalization of human activity has been made possible by the common network infrastructure offered by the World Wide Web, as well as numerous devices, from CCTV systems and sensors to smartphones and smart devices.</p>
       <p>Given the growing influence of robotics, a logical step should be the same digitalization of cyber-physical systems and devices themselves, i.e., their large-scale network integration to interact with human infrastructure and with each other. This will allow devices to use the collected data to self-manage and provide the most effective services to the person. Researchers have called this approach Robot-as-a-Service and see it as a potential economic model for the future.</p>
       <p>However, the multitude of autonomous devices that are networked and capable of physically affecting the world raise great security concerns, exacerbated by the negative experience of large centralized projects. Such network CPSs require studying the issues of communication protocols and managing multi-agent systems of heterogeneous devices, without taking into account the fact that managing a single device can also be a nontrivial task. In addition, the final goal of creating a networked CPS is its integration into the digital economy, and this imposes additional restrictions related to legal and economic aspects and information protection.</p>
       <p>Decentralized technologies such as peer-to-peer networks, blockchains and smart contracts are a promising area of research in this area. They do not have the drawbacks of centralized approaches, make it easier to solve some issues of organizing a multi-agent system, and also already have ways of integrating with the digital economy.</p>
       <p>Therefore, within the framework of this laboratory, we propose to investigate aspects of the application of precisely decentralized technologies for managing network CPS. It is supposed to use the open source platform <g-link to="https://robonomics.network/">Robonomics</g-link>, which offers the capabilities of the Ethereum and Polkadot blockchains for robotic devices compatible with the Robot Operating System framework, and uses the market mechanism as the basic way of interaction between devices and humans. The main goal of the laboratory is the application of decentralized technologies for networked cyber-physical systems in various applications.</p>
     </div>
-    <div class="text-sea" v-if="$locale=='ru'">
+    <div class="text-sea" v-show="$locale=='ru'">
       <p>Текущая масштабная цифровизация человеческой активности стала возможна благодаря общей сетевой инфраструктуре, предложенной Всемирной сетью, а также многочисленным устройствам, от систем CCTV и датчиков до смартфонов и умных устройств.</p>
       <p>С учетом роста влияния робототехники, логичным шагом в этой цепочке должна стать такая же цифровизация самих киберфизических систем и устройств, т. е. их масштабная сетевая интеграция для взаимодействия с человеческой инфраструктурой и друг с другом. Это позволит устройствам использовать собираемые данные для самоуправления и предоставления наиболее эффективных услуг человеку. Исследователи назвали подобный подход Robot-as-a-Service (робот как услуга) и рассматривают его как потенциальную экономическую модель будущего.</p>
       <p>Однако, множество автономных устройств, объединенных в сеть и способных физически влиять на мир, вызывают большие опасения с точки зрения безопасности, усугубленные негативным опытом крупных централизованных проектов. Подобные сетевые КФС требуют изучения вопросов коммуникационных протоколов и управления многоагентыми системами разнородных устройств, без учета того, что управление отдельным устройством может быть также нетривиальной задачей. Кроме того, финальной целью создания сетевой КФС становится ее интеграция в цифровую экономику, а это накладывает дополнительные ограничения, связанные с правовыми и экономическими аспектами и защитой информации.</p>
@@ -167,8 +167,8 @@
     </div>
 
     <h2 class="tick">{{$ts('Relevance to ITMO’s prioritized areas')}}</h2>
-    <p v-if="$locale=='en'">The research interest of the laboratory corresponds to the priority areas of <g-link to="https://en.itmo.ru">ITMO University</g-link> in “Intelligent technologies and robotics”, as well as on “Intelligent technologies in the economy, social sphere and art”.</p>
-    <p v-if="$locale=='ru'">Исследовательский интерес лаборатории соответствует приоритетным направлениям <g-link to="https://itmo.ru">Университета ИТМО</g-link> по “Интеллектуальным технологиям и робототехнике”, а также по “Интеллектуальным технологиям в экономике, социальной сфере и искусстве”.</p>
+    <p v-show="$locale=='en'">The research interest of the laboratory corresponds to the priority areas of <g-link to="https://en.itmo.ru">ITMO University</g-link> in “Intelligent technologies and robotics”, as well as on “Intelligent technologies in the economy, social sphere and art”.</p>
+    <p v-show="$locale=='ru'">Исследовательский интерес лаборатории соответствует приоритетным направлениям <g-link to="https://itmo.ru">Университета ИТМО</g-link> по “Интеллектуальным технологиям и робототехнике”, а также по “Интеллектуальным технологиям в экономике, социальной сфере и искусстве”.</p>
 
     <h2>{{$ts('The laboratory focuses on four major areas of research')}}:</h2>
 
@@ -177,10 +177,10 @@
       <div class="isection-text">
         <h3>{{$ts('Certified measurements of the quality of water resources using unmanned surface vehicles')}}</h3>
         
-        <div class="isection-title" v-if="$locale=='en'">The main focus is on an environmental monitoring system built on a small fleet of <g-link to="https://www.youtube.com/watch?v=Mtqm5y6Bolo">small marine vessels</g-link> equipped with compact sensors. In this case, the Robnonomics platform is used for secure registration of vessels, their missions and collected data on water samples, thereby ensuring the certification of measurements. </div>
-        <div class="isection-title" v-if="$locale=='ru'">Основной фокус уделяется системе мониторинга окружающей среды, построенной на небольшом флоте <g-link to="https://www.youtube.com/watch?v=Mtqm5y6Bolo">малогабаритных морских судов</g-link> , оснащенных компактными датчиками. Платформа Робнономика в данном случае используется для защищенной регистрации судов, их миссий и собранных данных о пробах воды, тем самым обеспечивая сертифицированность замеров.</div>
+        <div class="isection-title" v-show="$locale=='en'">The main focus is on an environmental monitoring system built on a small fleet of <g-link to="https://www.youtube.com/watch?v=Mtqm5y6Bolo">small marine vessels</g-link> equipped with compact sensors. In this case, the Robnonomics platform is used for secure registration of vessels, their missions and collected data on water samples, thereby ensuring the certification of measurements. </div>
+        <div class="isection-title" v-show="$locale=='ru'">Основной фокус уделяется системе мониторинга окружающей среды, построенной на небольшом флоте <g-link to="https://www.youtube.com/watch?v=Mtqm5y6Bolo">малогабаритных морских судов</g-link> , оснащенных компактными датчиками. Платформа Робнономика в данном случае используется для защищенной регистрации судов, их миссий и собранных данных о пробах воды, тем самым обеспечивая сертифицированность замеров.</div>
         
-        <div class="isection-desc" v-if="$locale=='en'">
+        <div class="isection-desc" v-show="$locale=='en'">
           <p>Within the framework of the direction, the following issues are investigated:</p>
           <ul>
             <li>finding and tracking pollution sources, taking into account the computing limitations of devices;</li>
@@ -193,7 +193,7 @@
             <li>methods of blockchainization and monetization of environmental data.</li>
           </ul>
         </div>
-        <div class="isection-desc" v-if="$locale=='ru'">
+        <div class="isection-desc" v-show="$locale=='ru'">
           <p>В рамках направления исследуются следующие вопросы:</p>
           <ul>
             <li>поиск и отслеживание источников загрязнений с учетом вычислительных ограничений устройств;</li>
@@ -211,14 +211,14 @@
     </div>
 
     <div class="isection">
-      <g-image class="isection-image" src="~/assets/images/project-2.png" style="width:300px" />
+      <g-image class="isection-image" src="~/assets/images/project-2.png" style="width:15rem" />
       <div class="isection-text">
         <h3>{{$ts('Smart factories for Industry 4.0')}}</h3>
 
-        <div class="isection-title" v-if="$locale=='en'">Smart factories are factories in which autonomous production occurs by collecting, exchanging and using information between people, materials and machines using network technologies. In the final stage, such factories operate without human intervention, independently adjusting their production process based on feedback from product sales. A <g-link to="https://youtu.be/yuxOF_z70us">test bench</g-link> is available at the faculty, based on the Fischertechnik designer and Siemens controllers, which simulates a smart factory, from the supply of raw materials to the shipment of products from warehouses, depending on the demand for it.</div>
-        <div class="isection-title" v-if="$locale=='ru'">Умные фабрики — это фабрики, в которых автономное производство происходит путем сбора, обмена и использования информации между людьми, материалами и машинами с помощью сетевых технологий. В финальном варианте такие фабрики функционируют без участия человека, самостоятельно корректируя свой производственный процесс по обратной связи от продаж продукции. На факультете доступен <g-link to="https://youtu.be/yuxOF_z70us">тестовый стенд</g-link> , на основе конструктора Fischertechnik и контроллеров Siemens, который имитирует умную фабрику, от поставки сырья до отгрузки продукции со складов в зависимости от спроса на нее.</div>
+        <div class="isection-title" v-show="$locale=='en'">Smart factories are factories in which autonomous production occurs by collecting, exchanging and using information between people, materials and machines using network technologies. In the final stage, such factories operate without human intervention, independently adjusting their production process based on feedback from product sales. A <g-link to="https://youtu.be/yuxOF_z70us">test bench</g-link> is available at the faculty, based on the Fischertechnik designer and Siemens controllers, which simulates a smart factory, from the supply of raw materials to the shipment of products from warehouses, depending on the demand for it.</div>
+        <div class="isection-title" v-show="$locale=='ru'">Умные фабрики — это фабрики, в которых автономное производство происходит путем сбора, обмена и использования информации между людьми, материалами и машинами с помощью сетевых технологий. В финальном варианте такие фабрики функционируют без участия человека, самостоятельно корректируя свой производственный процесс по обратной связи от продаж продукции. На факультете доступен <g-link to="https://youtu.be/yuxOF_z70us">тестовый стенд</g-link> , на основе конструктора Fischertechnik и контроллеров Siemens, который имитирует умную фабрику, от поставки сырья до отгрузки продукции со складов в зависимости от спроса на нее.</div>
         
-        <div class="isection-desc" v-if="$locale=='en'">
+        <div class="isection-desc" v-show="$locale=='en'">
           <p>The stand allows you to explore the following issues:</p>
           <ul>
             <li>optimal management of a multi-agent system using market mechanisms;</li>
@@ -228,7 +228,7 @@
             <li>control of industrial Siemens microcontrollers.</li>
           </ul>
         </div>
-        <div class="isection-desc" v-if="$locale=='ru'">
+        <div class="isection-desc" v-show="$locale=='ru'">
           <p>Стенд позволяет исследовать следующие вопросы:</p>
           <ul>
             <li>оптимальное управление многоагентной системой с помощью рыночных механизмов;</li>
@@ -243,14 +243,14 @@
     </div>
 
     <div class="isection">
-      <g-image class="isection-image" src="~/assets/images/project-3.png" style="width:240px" />
+      <g-image class="isection-image" src="~/assets/images/project-3.png" style="width:15rem" />
       <div class="isection-text">
         <h3>{{$ts('The robot artist as an autonomous creative system')}}</h3>
 
-        <div class="isection-title" v-if="$locale=='en'">Autonomous systems that create art objects (or artifacts) have been of interest to researchers since the 1980s, gradually accelerating with the development of image recognition and Simultaneous Localization and Mapping (SLAM) techniques. However, the task of generating a human-independent idea of an artifact - what is called creativity - has begun to advance recently, with the development of neural networks, for example, art in the style of Inceptionism from the Google AI team. The most intriguing thing is the creation of a completely autonomous creative system capable of “inventing” the idea of an artifact, realizing it, presenting it for review, and drawing conclusions from feedback on how to proceed further. The <g-link to="https://www.youtube.com/watch?v=xSD_lsrAA0I">KUKA KR6 R900</g-link> manipulator is available to work on this direction at the faculty, which can draw with a brush on canvas. The robot works on the basis of the Robonomics platform, which allows it, for example, to put up paintings for a digital auction.</div>
-        <div class="isection-title" v-if="$locale=='ru'">Автономные системы, создающие предметы искусства (или артефакты), интересовали исследователей начиная с 1980-х годов, постепенно ускоряясь с развитием распознавания изображений и методов SLAM (Simultaneous Localization and Mapping). Однако задача генерации независимой от человека идеи артефакта — то, что и называется творчеством — стала продвигаться недавно, с развитием нейросетей, например, арт в стиле инсепшионизма от команды Google AI. Наиболее интригует создание полностью автономной творческой системы, способной “придумать” идею артефакта, реализовать ее, представить на обозрение, а по обратной связи сделать выводы, как действовать далее. Для работы над этим направлением на факультете доступен манипулятор <g-link to="https://www.youtube.com/watch?v=xSD_lsrAA0I">KUKA KR6 R900</g-link> , способный рисовать кистью на холсте. Робот работает на базе платформы Робономика, что позволяет ему, например, выставлять картины на цифровой аукцион.</div>
+        <div class="isection-title" v-show="$locale=='en'">Autonomous systems that create art objects (or artifacts) have been of interest to researchers since the 1980s, gradually accelerating with the development of image recognition and Simultaneous Localization and Mapping (SLAM) techniques. However, the task of generating a human-independent idea of an artifact - what is called creativity - has begun to advance recently, with the development of neural networks, for example, art in the style of Inceptionism from the Google AI team. The most intriguing thing is the creation of a completely autonomous creative system capable of “inventing” the idea of an artifact, realizing it, presenting it for review, and drawing conclusions from feedback on how to proceed further. The <g-link to="https://www.youtube.com/watch?v=xSD_lsrAA0I">KUKA KR6 R900</g-link> manipulator is available to work on this direction at the faculty, which can draw with a brush on canvas. The robot works on the basis of the Robonomics platform, which allows it, for example, to put up paintings for a digital auction.</div>
+        <div class="isection-title" v-show="$locale=='ru'">Автономные системы, создающие предметы искусства (или артефакты), интересовали исследователей начиная с 1980-х годов, постепенно ускоряясь с развитием распознавания изображений и методов SLAM (Simultaneous Localization and Mapping). Однако задача генерации независимой от человека идеи артефакта — то, что и называется творчеством — стала продвигаться недавно, с развитием нейросетей, например, арт в стиле инсепшионизма от команды Google AI. Наиболее интригует создание полностью автономной творческой системы, способной “придумать” идею артефакта, реализовать ее, представить на обозрение, а по обратной связи сделать выводы, как действовать далее. Для работы над этим направлением на факультете доступен манипулятор <g-link to="https://www.youtube.com/watch?v=xSD_lsrAA0I">KUKA KR6 R900</g-link> , способный рисовать кистью на холсте. Робот работает на базе платформы Робономика, что позволяет ему, например, выставлять картины на цифровой аукцион.</div>
         
-        <div class="isection-desc" v-if="$locale=='en'">
+        <div class="isection-desc" v-show="$locale=='en'">
           <p>The stand allows you to explore the following issues:</p>
           <ul>
             <li>solving the inverse problem of kinematics for manipulator control when drawing;</li>
@@ -259,7 +259,7 @@
             <li>using feedback from the sale of paintings to find the most popular ideas for new ones.</li>
           </ul>
         </div>
-        <div class="isection-desc" v-if="$locale=='ru'">
+        <div class="isection-desc" v-show="$locale=='ru'">
           <p>Стенд позволяет исследовать следующие вопросы:</p>
           <ul>
             <li>решение обратной задачи кинематики для управления манипулятором при рисовании;</li>
@@ -273,14 +273,14 @@
     </div>
 
     <div class="isection">
-      <g-image class="isection-image" src="~/assets/images/project-4.png" style="width:240px" />
+      <g-image class="isection-image" src="~/assets/images/project-4.png" style="width:15rem" />
       <div class="isection-text">
         <h3>{{$ts('Digitalization of the state of the infrastructure using a network of sensors')}}</h3>
 
-        <div class="isection-title" v-if="$locale=='en'">The Internet of Things has been actively expanding in the last decade, but it still has significant limitations for ubiquitous use, primarily related to security when connecting smart devices and sensors. Decentralization of governance has the potential to circumvent this limitation, opening the way for decentralized autonomous organizations and even smart cities. This infrastructure has a digital footprint for every facility in the organization, allowing you to <g-link to="https://youtu.be/shqey3tmNUk">analyze health and efficiently manage</g-link> assets and costs, from electricity consumption to PM10 concentration in offices.</div>
-        <div class="isection-title" v-if="$locale=='ru'">Интернет вещей активно расширялся в последнее десятилетие, но все еще имеет существенные ограничения для повсеместного использования, в первую очередь связанную с безопасностью при подключении умных устройств и датчиков. Децентрализация управления потенциально способна обойти это ограничение, что открывает дорогу децентрализованным автономным организациям и даже умным городам. В такой инфраструктуре за каждым объектом организации закреплен цифровой след, позволяющий <g-link to="https://youtu.be/shqey3tmNUk">анализировать состояние и эффективно управлять</g-link> активами и расходами, от электропотребления до концентрации частиц PM10 в офисах.</div>
+        <div class="isection-title" v-show="$locale=='en'">The Internet of Things has been actively expanding in the last decade, but it still has significant limitations for ubiquitous use, primarily related to security when connecting smart devices and sensors. Decentralization of governance has the potential to circumvent this limitation, opening the way for decentralized autonomous organizations and even smart cities. This infrastructure has a digital footprint for every facility in the organization, allowing you to <g-link to="https://youtu.be/shqey3tmNUk">analyze health and efficiently manage</g-link> assets and costs, from electricity consumption to PM10 concentration in offices.</div>
+        <div class="isection-title" v-show="$locale=='ru'">Интернет вещей активно расширялся в последнее десятилетие, но все еще имеет существенные ограничения для повсеместного использования, в первую очередь связанную с безопасностью при подключении умных устройств и датчиков. Децентрализация управления потенциально способна обойти это ограничение, что открывает дорогу децентрализованным автономным организациям и даже умным городам. В такой инфраструктуре за каждым объектом организации закреплен цифровой след, позволяющий <g-link to="https://youtu.be/shqey3tmNUk">анализировать состояние и эффективно управлять</g-link> активами и расходами, от электропотребления до концентрации частиц PM10 в офисах.</div>
         
-        <div class="isection-desc" v-if="$locale=='en'">
+        <div class="isection-desc" v-show="$locale=='en'">
           <p>Within the framework of this direction, it is planned to investigate:</p>
           <ul>
             <li>optimal placement of sensors in rooms to collect data on temperature / humidity / air quality;</li>
@@ -289,7 +289,7 @@
             <li>safety of sensor networks.</li>
           </ul>
         </div>
-        <div class="isection-desc" v-if="$locale=='ru'">
+        <div class="isection-desc" v-show="$locale=='ru'">
           <p>В рамках данного направления планируется исследовать:</p>
           <ul>
             <li>оптимальное размещение датчиков в помещениях для сбора данных о температуре / влажности / качества воздуха;</li>
@@ -303,7 +303,7 @@
     </div>
 
     <h2>{{$ts('Skills that participants will develop')}}</h2>
-    <ul v-if="$locale=='en'">
+    <ul v-show="$locale=='en'">
       <li>Working with web3 technologies: Ethereum ecosystems, Polkadot and Robonomics, deploying smart contracts.</li>
       <li>Robot Operating System framework: the entire pipeline, from sending a task for a robot mission to receiving the resulting data from executing devices.</li>
       <li>Modeling the work of various CPS and management theory skills.</li>
@@ -312,7 +312,7 @@
       <li>Ability to work with microcontrollers, single board computers and sensor systems.</li>
       <li>Scientific activity, setting up experiments, design and publication of scientific articles.</li>
     </ul>
-    <ul v-if="$locale=='ru'">
+    <ul v-show="$locale=='ru'">
       <li>Работа с web3-технологиями: экосистемы Ethereum, Polkadot и Robonomics, развертывание смарт-контрактов.</li>
       <li>Фреймворк Robot Operating System: весь пайплайн, от отправки задания на миссию робота до получения результирующих данных от исполняющих устройств.</li>
       <li>Моделирование работы различных КФС и навыки теории управления.</li>
@@ -323,7 +323,7 @@
     </ul>
 
     <h2>{{$ts('First year plan')}}</h2>
-    <ul v-if="$locale=='en'">
+    <ul v-show="$locale=='en'">
       <li>Control of an unmanned surface vehicle: an article co-authored with Professor A. S. Matveev with a more accurate mathematical model of the vehicle.</li>
       <li>Robot Artist: An article with Professor E. C. Ferrer of the MIT Media Lab on the concept of • “Digital Autonomous Robotic Entrepreneur”; See article about manipulator control in a brush painting task.</li>
       <li>DAOS project - managing smart devices in an office or coworking space based on Aragon DAO and Robonomics; launching the project on Kickstarter.</li>
@@ -332,7 +332,7 @@
       <li>The network of sensors and the aggregation of their information: article for the conference.</li>
       <li>Initial experiments with the smart factory stand.</li>
     </ul>
-    <ul v-if="$locale=='ru'">
+    <ul v-show="$locale=='ru'">
       <li>Управление безэкипажным надводным аппаратом: статья в соавторстве с профессором А. С. Матвеевым с более точной математической моделью аппарата.</li>
       <li>Робот-художник: статья с профессором E. C. Ferrer из MIT Media Lab о концепции “Digital Autonomous Robotic Entrepreneur”; статья об управлении манипулятором в задаче рисования кистью.</li>
       <li>Проект DAOS — управление умными устройствами в офисе или коворкинге на базе Aragon DAO и Robonomics; вывод проекта на Kickstarter.</li>
