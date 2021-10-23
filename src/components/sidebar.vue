@@ -49,7 +49,6 @@ export default {
 
 <style scoped>
     .sidebar {
-        max-width: var(--sidebarwidth);
         font-size: var(--font-size-mid);
     }
 

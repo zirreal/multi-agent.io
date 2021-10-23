@@ -48,6 +48,8 @@
   .icon-play .st0 { fill: var(--color-light) }
   .icon-pause .st0 { fill: var(--color-light) }
 
+  .sidebar { max-width: 25rem; }
+
 </style>
 
 <script>
