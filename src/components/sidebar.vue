@@ -1,7 +1,10 @@
 <template>
     <div class="sidebar">
 
-        <p> <g-link :to="localeLink+ '/'" class="link-clear"> <logo /> </g-link> </p>
+        <p>
+            <g-link v-show="$locale=='en'" to="/" class="link-clear"> <logo /> </g-link>
+            <g-link v-show="$locale=='ru'" to="/ru/" class="link-clear"> <logo /> </g-link>
+        </p>
 
         <p class="title">
             <g-link to="/" exact v-show="$locale=='en'">
