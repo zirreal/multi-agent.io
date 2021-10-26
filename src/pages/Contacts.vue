@@ -10,6 +10,8 @@
             <dd>62.01 – {{$ts('Primary occupation')}} – "{{$ts('Computer software development')}}"</dd>
             <dt>{{$ts('Legal and actual address')}}</dt>
             <dd>{{$ts('address')}}</dd>
+            <dt>E-mail</dt>
+            <dd>vm@multi-agent.io</dd>
         </dl>
     </Layout>
 </template>
