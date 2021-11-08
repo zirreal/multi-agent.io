@@ -4,7 +4,11 @@
 
       <div class="page-content">
         <h1><slot name="title">Multi-Agent Systems</slot></h1>
-        <div class="text"><slot/></div>
+        <div class="text">
+          <slot/>
+           <h2>{{$ts('Apply to join us')}}</h2>
+          <formJoin/>
+        </div>
       </div>
 
   </div>
@@ -107,7 +111,8 @@
 <script>
 export default {
   components: {
-    sidebar: () => import('../components/sidebar.vue')
+    sidebar: () => import('../components/sidebar.vue'),
+    formJoin: () => import('../components/formJoin.vue')
   }
 }
 </script>

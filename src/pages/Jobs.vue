@@ -4,8 +4,8 @@
 
         <div class="isection">
             <div class="isection-text">
-                <h3 v-if="$locale=='en'">Front-end developer</h3>
-                <h3 v-if="$locale=='ru'">Front-end разработчик</h3>
+                <h2 v-if="$locale=='en'">Front-end developer</h2>
+                <h2 v-if="$locale=='ru'">Front-end разработчик</h2>
 
                 <div class="isection-title" v-if="$locale=='en'">We’re seeking a frontend developer to maintain and create new website and dapp (decentralized application) interfaces.</div>
                 <div class="isection-title" v-if="$locale=='ru'">Мы ищем фронтенд разработчика для поддержки существующих интерфейсов и разработки новых на вебсайты и децентрализованные приложения.</div>
@@ -45,15 +45,5 @@
                 </div>
             </div>
         </div>
-
-        <!-- <formJoin/> -->
     </Layout>
 </template>
-
-<script>
-export default {
-  components: {
-    formJoin: () => import('../components/formJoin.vue')
-  },
-}
-</script>

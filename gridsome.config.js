@@ -20,5 +20,12 @@ module.exports = {
         routes: yaml.load(fs.readFileSync('./src/data/locales/routes.yaml', 'utf8')),
       }
     },
+
+    {
+      use: "gridsome-plugin-google-sheets-post",
+      options: {
+        script: process.env.FORM_SCRIPT
+      }
+  }
   ]
 }

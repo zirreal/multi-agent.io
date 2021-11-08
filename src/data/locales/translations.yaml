@@ -171,3 +171,39 @@
 - alias: Jobs
   en: Jobs
   ru: Вакансии
+
+
+
+# Form 'Apply to join us'
+
+- alias: Apply to join us
+  en: Apply to join us
+  ru: Присоединяйтесь к нам
+
+- alias: Your email
+  en: Your email
+  ru: Ваш email
+
+- alias: required
+  en: required
+  ru: обязательно
+
+- alias: Name
+  en: Name
+  ru: Имя
+
+- alias: Specialization
+  en: Specialization
+  ru: Специализация
+
+- alias: Your application in text form
+  en: Your application in text form
+  ru: Ваше предложение в свободной форме
+
+- alias: I agree to receive emails
+  en: I agree to receive emails
+  ru: Ваше согласие на получение email'ов от нас
+
+- alias: Thanks, your application has been sent!
+  en: Thanks, your application has been sent!
+  ru: Спасибо, ваш запрос принят

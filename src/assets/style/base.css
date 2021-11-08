@@ -107,7 +107,7 @@ h2.tick:after {
     margin-right: auto;
 }
 
-select, input {
+select, input, textarea {
     appearance: none;
 
 	padding: .2rem .5rem;
@@ -129,6 +129,31 @@ select {
 	background-repeat: no-repeat;
 	background-position: calc(100% - 0.6rem) 50%;
 	padding-right: 2.2rem;
+}
+
+input[type='checkbox'] {
+    width: var(--space);
+    height: var(--space);
+    padding: 0;
+}
+
+input[type='checkbox']:checked {
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+}
+
+input[type="submit"] {
+    border-color: var(--color-blue);
+    background-color: var(--color-blue);
+    color: var(--color-light);
+    margin-top: var(--space);
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-green);
+    border-color: var(--color-green);
 }
 
 .link-clear:hover {
@@ -292,4 +317,8 @@ select {
         display: block;
         margin-bottom: var(--space);
     }
+}
+
+.page-content {
+    padding-bottom: calc(var(--space) * 4);
 }
