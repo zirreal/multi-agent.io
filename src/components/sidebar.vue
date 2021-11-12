@@ -8,17 +8,11 @@
 
         <p class="title">
             <g-link to="/" exact v-show="$locale=='en'">
-                <span>Laboratory of</span>
                 <span>Multi-Agent Systems</span>
-                <span>Smart Cities</span>
-                <span>and Industry 4.0</span>
             </g-link>
 
             <g-link to="/ru" exact v-show="$locale=='ru'">
-                <span>Лаборатория</span>
-                <span>мультиагентных систем</span>
-                <span>в Умных городах</span>
-                <span>и Индустрии 4.0</span>
+                <span>Мультиагентные системы</span>
             </g-link>
         </p>
 
