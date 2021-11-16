@@ -44,7 +44,12 @@ export default {
 <style scoped>
     .sidebar {
         font-size: var(--font-size-mid);
+        -ms-overflow-style: none;  /* hide scrollbar IE and Edge */
+            scrollbar-width: none;  /* hide scrollbar Firefox */
     }
+
+    /* hide scrollbar */
+    .sidebar::-webkit-scrollbar { display: none; }
 
     nav a, .title span {
         background-color: var(--color-dark);
