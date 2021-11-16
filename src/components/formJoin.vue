@@ -65,11 +65,19 @@
         border: 1px solid var(--color-dark);
         padding: 0 calc(var(--space) * 0.5) calc(var(--space) * 0.5);
         margin-bottom: var(--space);
+        transition: 0.4s all ease;
     }
 
-    .label span {
+    .label:focus-within {
+      border-color: var(--color-blue);
+    }
+
+    .label:focus-within span {
         font-size: 80%;
         line-height: 1;
+        color: var(--color-blue);
+        font-weight: bold;
+        transition: 0.2s all ease-in;
     }
 
     .status-wait form, .status-ok form {
