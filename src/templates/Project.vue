@@ -1,6 +1,6 @@
 <template>
   <layout>
-        <h1 v-html="$page.post.title"/>
+        <h2 v-html="$page.post.title"/>
         <VueRemarkContent />
   </layout>
 </template>
