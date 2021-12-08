@@ -15,16 +15,3 @@
         </dl>
     </Layout>
 </template>
-
-
-<script>
-
-  export default {
-
-    components: {
-      formJoin: () => import('~/components/formJoin.vue'),
-    }
-
-  }
-
-</script>

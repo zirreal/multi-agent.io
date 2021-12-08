@@ -8,25 +8,27 @@
 
         <p class="title">
             <g-link to="/" exact v-show="$locale=='en'">
-                <span>Multi-Agent Systems</span>
+                <span>Multi-Agent</span>
+                <span>Systems</span>
             </g-link>
 
             <g-link to="/ru" exact v-show="$locale=='ru'">
-                <span>Мультиагентные системы</span>
+                <span>Мультиагентные</span>
+                <span>системы</span>
             </g-link>
         </p>
 
-        <nav v-show="$locale=='en'">
+        <nav>
             <p><g-link to="/about">{{$ts('About us')}}</g-link></p>
             <p><g-link to="/contacts">{{$ts('Contacts')}}</g-link></p>
             <p><g-link to="/jobs">{{$ts('Jobs')}}</g-link></p>
         </nav>
 
-        <nav v-show="$locale=='ru'">
+        <!-- <nav v-show="$locale=='ru'">
             <p><g-link to="/ru/about">{{$ts('About us')}}</g-link></p>
             <p><g-link to="/ru/contacts">{{$ts('Contacts')}}</g-link></p>
             <p><g-link to="/ru/jobs">{{$ts('Jobs')}}</g-link></p>
-        </nav>
+        </nav> -->
 
         <languageSwitcher />
     </div>

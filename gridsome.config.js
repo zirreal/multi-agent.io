@@ -16,8 +16,22 @@ module.exports = {
         locales: ["en", "ru"],
         defaultLocale: "en",
         translations: yaml.load(fs.readFileSync('./src/data/locales/translations.yaml', 'utf8')),
-        // collections: ['blog'],
+        collections: ['projects'],
         routes: yaml.load(fs.readFileSync('./src/data/locales/routes.yaml', 'utf8')),
+      }
+    },
+
+    {
+      // Create posts from markdown files
+      use: "@gridsome/vue-remark",
+      options: {
+        typeName: "Post",
+        baseDir: "projects",
+        pathPrefix: '/projects',
+        template: './src/templates/Project.vue',
+        plugins: [
+          ['@noxify/gridsome-plugin-remark-embed', {'enabledProviders' : ['Youtube']}],
+        ]
       }
     },
 
