@@ -22,6 +22,7 @@
             <p><g-link to="/about">{{$ts('About us')}}</g-link></p>
             <p><g-link to="/contacts">{{$ts('Contacts')}}</g-link></p>
             <p><g-link to="/jobs">{{$ts('Jobs')}}</g-link></p>
+            <p><g-link to="/projects">{{$ts('Projects')}}</g-link></p>
         </nav>
 
         <!-- <nav v-show="$locale=='ru'">
