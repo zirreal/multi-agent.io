@@ -59,13 +59,30 @@
       width: 100%;
     }
 
-    .text > *:not(h2):not(h3):not(h4):not(h5)
+    .text > *:not(h2):not(h3):not(h4):not(h5):not(.templateInsert)
     {
         max-width: calc(var(--w-content)*0.9);
     }
 
-   .text h2, .text h3, .text h4, .text h5 {
+    .text h2, .text h3, .text h4, .text h5, .text .templateInsert {
       max-width: var(--w-content);
+    }
+
+    .templateInsert {
+      margin-top: -54px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      max-width: 100%;
+    }
+
+    .templateInsert > * {
+      display: block;
+      width: 100%;
+    }
+
+    .templateInsert > *:not(h2):not(h3):not(h4):not(h5) {
+      max-width: calc(var(--w-content)*0.9);
     }
 
   }
