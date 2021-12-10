@@ -172,7 +172,10 @@
   en: Jobs
   ru: Вакансии
 
-
+# Projects
+- alias: Projects
+  en: Projects
+  ru: Проекты
 
 # Form 'Apply to join us'
 

@@ -1,10 +1,14 @@
 <template>
   <layout>
-        <h2 v-html="$page.post.title"/>
-        <VueRemarkContent />
+<!--    <h2 v-html="$page.post.title"/>-->
+    <template v-slot:title><a>Projects</a> / {{$page.post.title}}</template>
+    <VueRemarkContent class="templateInsert" />
   </layout>
 </template>
 
+<style scoped>
+
+</style>
 
 <static-query>
   query {
