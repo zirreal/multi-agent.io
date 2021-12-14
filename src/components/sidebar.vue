@@ -23,6 +23,16 @@
             <p><g-link to="/contacts">{{$ts('Contacts')}}</g-link></p>
             <p><g-link to="/jobs">{{$ts('Jobs')}}</g-link></p>
             <p><g-link to="/projects">{{$ts('Projects')}}</g-link></p>
+            <div class="posts-col">
+              <p v-for="edge in $static.allPost.edges"
+                 :class="[{activeProject: edge.node.title === $route.path.split('/')[2]}, ]"
+                 @click="redirect(edge.node.title)"
+              >
+                <a :href="'/projects/' + edge.node.title">
+                  {{edge.node.title}}
+                </a>
+              </p>
+            </div>
         </nav>
 
         <!-- <nav v-show="$locale=='ru'">
@@ -71,6 +81,24 @@ export default {
         background-color: var(--color-orange);
     }
 
+    nav .posts-col > p {
+      padding-left: 10px;
+      border-left: 4px solid var(--color-dark);
+      margin-bottom: 0;
+    }
+
+    nav .posts-col > p > a {
+      color: var(--color-dark);
+      background-color: transparent;
+    }
+
+    nav .posts-col > .activeProject {
+      border-left: 4px solid var(--color-blue) !important;
+    }
+    nav .posts-col > .activeProject > a {
+      color: var(--color-blue);
+    }
+
     .title {
         margin: calc(var(--space)*2) 0
     }
@@ -93,4 +121,17 @@ export default {
         background-color: var(--color-orange);
         border-color: var(--color-orange);
     }
+
 </style>
+
+<static-query>
+  query {
+    allPost {
+      edges {
+        node {
+          title
+        }
+      }
+    }
+  }
+</static-query>
