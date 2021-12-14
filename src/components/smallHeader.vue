@@ -13,5 +13,9 @@
   .tag {
     font-size: 1rem;
     font-weight: bold;
+    text-wrap: normal;
+  }
+  .tags {
+    width: 90%;
   }
 </style>
