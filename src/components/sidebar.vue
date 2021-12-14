@@ -23,7 +23,7 @@
             <p><g-link to="/contacts">{{$ts('Contacts')}}</g-link></p>
             <p><g-link to="/jobs">{{$ts('Jobs')}}</g-link></p>
             <p><g-link to="/projects">{{$ts('Projects')}}</g-link></p>
-            <div class="posts-col">
+            <div class="posts-col" v-if="$route.path.split('/')[1] === 'projects'">
               <p v-for="edge in $static.allPost.edges"
                  :class="[{activeProject: edge.node.title === $route.path.split('/')[2]}, ]"
                  @click="redirect(edge.node.title)"
