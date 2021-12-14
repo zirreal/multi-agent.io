@@ -28,7 +28,7 @@ export default {
     align-items: center;
     background-color: #fafafa;
     padding: 20px;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     width: 100%;
     height: 300px;
     box-shadow: 1px 1px 20px #999999;
