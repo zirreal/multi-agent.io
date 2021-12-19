@@ -63,6 +63,14 @@ dt { font-weight: bold; }
 h2.tick {
     color: var(--color-green)
 }
+h2.callout {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.25rem;
+    text-align: right;
+    margin-top: var(--space);
+    margin-bottom: calc(var(--space)*3);
+}
 
 h2.tick:after {
     content: "";
@@ -73,6 +81,33 @@ h2.tick:after {
     background: url(/tick.svg) no-repeat 50% 50%;
     background-size: contain;
     margin-left: var(--space)
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+td {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid var(--color-dark);
+}
+
+@media screen and (max-width: 450px) {
+    tr:not(.tr__no_reverse) {
+        flex-direction: column;
+    }
+    tr:not(.tr__no_reverse) > td {
+        width: 100%;
+    }
 }
 
 .text-sea p, .text-sea li {
