@@ -6,25 +6,25 @@ locale: 'en'
 import callout from '~/components/callout.vue'
 import smallHeader from '~/components/smallHeader.vue'
 import textBlock from '~/components/textBlock.vue'
-import blockHeader from '~/components/blockHeader.vue'
 import buttonsRow from '~/components/buttonsRow.vue'
 import iconButton from '~/components/iconButton.vue'
 import videoInsert from '~/components/videoInsert.vue'
-import Row from '~/components/Row.vue'
-import Col from '~/components/Col.vue'
 import Icon from '~/components/Icon.vue'
 import gallery from '~/components/gallery.vue'
-import imgCaption from '~/components/imgCaption.vue'
 import galleryImg from '~/components/galleryImg.vue'
 
+import tempGallery from '~/components/tempGallery.vue'
 
-<callout>Robot Artist and Entrepreneur</callout>
+
+<h2 class="callout">Robot Artist and Entrepreneur</h2>
 
 <img style="width: 100%" alt="Gakachu image" src="/gakachu.png"/>
 
-<imgCaption>Gaka-chu (from Japanese 画家 — gaka — artist, chu — in honor of Pikachu) is an industrial 6 axis manipulator, that has been re-equipped to draw with brushes and paints and provided with the software to sell its works and maintain self-sufficiency. Gaka-chu allows us to look beyond the line that separates robots as tools and robots as peers. </imgCaption>
+<p></p>
+<p></p>
+<p>Gaka-chu (from Japanese 画家 — gaka — artist, chu — in honor of Pikachu) is an industrial 6 axis manipulator, that has been re-equipped to draw with brushes and paints and provided with the software to sell its works and maintain self-sufficiency. Gaka-chu allows us to look beyond the line that separates robots as tools and robots as peers. </p>
 
-<blockHeader>Mission</blockHeader>
+<h2>Mission</h2>
 
 <smallHeader>Anathomy from human</smallHeader>
 <textBlock>To dive into the concept of an “autonomous creative system,” we tried to make Gaka-chu as independent of a human as possible. This allowed us to explore a completely gray area where robotic systems become authors and even owners of assets.</textBlock>
@@ -42,50 +42,58 @@ import galleryImg from '~/components/galleryImg.vue'
 <textBlock>The main task of a robot as an entrepreneur is to support its activities using the accumulated capital. We ran an experiment in which Gaka-chu purchased canvases, paints, and brushes from a test automated system of an art shop, paying for the order with cryptocurrency.</textBlock>
 
 <buttonsRow>
-    <iconButton to="/" type="OpenSea">OpenSea</iconButton>
-    <iconButton to="/" type="Rarible">Rarible</iconButton>
+    <iconButton type="OpenSea">OpenSea</iconButton>
+    <iconButton type="Rarible">Rarible</iconButton>
 </buttonsRow>
 
-<videoInsert src="https://www.youtube.com/embed/GZQ0LKsHGak?rel=0&disablekb=1&modestbranding=1"></videoInsert>
 
-<blockHeader>Tech details</blockheader>
+
+<videoInsert src="https://www.youtube.com/embed/xSD_lsrAA0I"></videoInsert>
+
+<h2>Tech details</h2>
 
 <table>
-    <Row>
-        <Col><strong>Hardware</strong></Col>
-        <Col>Manipulator KUKA KR6 R900 with Intel RealSense  D435i depth camera and Intel NUC NUC7i5BNB (Intel Core i5-7260U, 3.40 GHz, 8 GB RAM) for image and motion processing</Col>
-    </Row>
-    <Row>
-        <Col><strong>Main software connector</strong></Col>
-        <Col>Robot Operating System: all components are implemented as ROS packages and nodes</Col>
-    </Row>
-    <Row>
-        <Col><strong>Image processing software</strong></Col>
-        <Col>librealsense ROS package, OpenCV library for image skeletonization</Col>
-    </Row>
-    <Row>
-        <Col><strong>Motion planning</strong></Col>
-        <Col>MoveIt Motion Planning Framework with own module for inverse kinematics</Col>
-    </Row>
-    <Row>
-        <Col><strong>NTF mining and auction</strong></Col>
-        <Col>OpenSea platform with its SDK</Col>
-    </Row>
-    <Row>
-        <Col><strong>Agent-agent economic interaction</strong></Col>
-        <Col>Robonomics Network with AIRA client: provides the ability to send transactions to the Ethereum network</Col>
-    </Row>
-    <Row>
-        <Col><strong>Data storage</strong></Col>
-        <Col>InterPlanetary File System</Col>
-    </Row>
+    <tbody>
+        <tr>
+            <td><strong>Hardware</strong></td>
+            <td>Manipulator KUKA KR6 R900 with Intel RealSense  D435i depth camera and Intel NUC NUC7i5BNB (Intel Core i5-7260U, 3.40 GHz, 8 GB RAM) for image and motion processing</td>
+        </tr>
+        <tr>
+            <td><strong>Hardware</strong></td>
+            <td>Manipulator KUKA KR6 R900 with Intel RealSense  D435i depth camera and Intel NUC NUC7i5BNB (Intel Core i5-7260U, 3.40 GHz, 8 GB RAM) for image and motion processing</td>
+        </tr>
+    <tr>
+        <td><strong>Main software connector</strong></td>
+        <td>Robot Operating System: all components are implemented as ROS packages and nodes</td>
+    </tr>
+    <tr>
+        <td><strong>Image processing software</strong></td>
+        <td>librealsense ROS package, OpenCV library for image skeletonization</td>
+    </tr>
+    <tr>
+        <td><strong>Motion planning</strong></td>
+        <td>MoveIt Motion Planning Framework with own module for inverse kinematics</td>
+    </tr>
+    <tr>
+        <td><strong>NTF mining and auction</strong></td>
+        <td>OpenSea platform with its SDK</td>
+    </tr>
+    <tr>
+        <td><strong>Agent-agent economic interaction</strong></td>
+        <td>Robonomics Network with AIRA client: provides the ability to send transactions to the Ethereum network</td>
+    </tr>
+    <tr>
+        <td><strong>Data storage</strong></td>
+        <td>InterPlanetary File System</td>
+    </tr>
+    </tbody> 
 </table>
 
 <buttonsRow>
-    <iconButton to="/" type="Github">Github repository</iconButton>
+    <iconButton type="Github">Github repository</iconButton>
 </buttonsRow>
 
-<blockHeader>R&D interests</blockHeader>
+<h2>R&D interests</h2>
 <ul>
 <li>Solving the inverse kinematics for 6 axis manipulator control when drawing.</li>
 <li>Task of web scraping for extracting the data for painting topics.</li>
@@ -94,30 +102,48 @@ import galleryImg from '~/components/galleryImg.vue'
 <li>Finding the most profitable topics using statistics from the sale of paintings.</li>
 </ul>
 
-<blockHeader>Media</blockHeader>
+<h2>Media</h2>
 
 <table>
-    <Row stickToTop><Icon type="paper"/><a href="/"><strong>Робот-художник Gaka-chu представил свои первые NFT</strong></a></Row>
-    <Row stickToTop><Icon type="paper"/><a href="/"><strong>Gaka-Chu: The Robot That Dreams of Being an Artist</strong></a></Row>
-    <Row stickToTop><Icon type="paper"/><a href="/"><strong>“Gaka-Chu. The Robot-artist” project: small clumsy KUKA manipulator living in the big world of serious industrial robots</strong></a></Row>
+    <tbody>
+        <tr class="tr__no_reverse"><Icon type="paper"/><a href="https://forklog.com/robot-hudozhnik-gaka-chu-predstavil-svoi-pervye-nft/"><strong>Робот-художник Gaka-chu представил свои первые NFT</strong></a></tr>
+        <tr class="tr__no_reverse"><Icon type="paper"/><a href="https://news.itmo.ru/en/science/cyberphysics/news/9331/"><strong>Gaka-Chu: The Robot That Dreams of Being an Artist</strong></a></tr>
+        <tr class="tr__no_reverse"><Icon type="paper"/><a href="https://blog.aira.life/gaka-chu-d2f6cfa61390"><strong>“Gaka-Chu. The Robot-artist” project: small clumsy KUKA manipulator living in the big world of serious industrial robots</strong></a></tr>
+    </tbody>
 </table>
 
 <gallery>
-    <gallery-img url="/cover.jpg"/>
-    <gallery-img url="/cover.jpg"/>
-    <gallery-img url="/cover.jpg"/>
-    <gallery-img url="/cover.jpg"/>
-    <gallery-img url="/cover.jpg"/>
-    <gallery-img url="/cover.jpg"/>
+    <gallery-img url="/gakachuGallery_1.png"/>
+    <gallery-img url="/gakachuGallery_2.png"/>
+    <gallery-img url="/gakachuGallery_3.png"/>
+    <gallery-img url="/gakachuGallery_4.png"/>
+    <gallery-img url="/gakachuGallery_5.png"/>
+    <gallery-img url="/gakachuGallery_6.png"/>
 </gallery>
 
-<videoInsert src="https://www.youtube.com/embed/GZQ0LKsHGak?rel=0&disablekb=1&modestbranding=1"></videoInsert>
+<videoInsert src="https://www.youtube.com/embed/GxlYxaykqTU"></videoInsert>
 
-<blockHeader>Gaka-chu profiles</blockHeader>
+<h2>Gaka-chu profiles</h2>
 
 <buttonsRow>
-<iconButton to="/" type="Github">Github</iconButton>
-<iconButton to="/" type="Youtube">YouTube</iconButton>
-<iconButton to="/" type="OpenSea">OpenSea</iconButton>
-<iconButton to="/" type="Rarible">Rarible</iconButton>
+<iconButton type="Github">Github</iconButton>
+<iconButton type="Youtube">YouTube</iconButton>
+<iconButton type="OpenSea">OpenSea</iconButton>
+<iconButton type="Rarible">Rarible</iconButton>
 </buttonsRow>
+
+[//]: # (<tempGallery>)
+
+[//]: # (    <gallery-img url="/gakachuGallery_1.png"/>)
+
+[//]: # (    <gallery-img url="/gakachuGallery_2.png"/>)
+
+[//]: # (    <gallery-img url="/gakachuGallery_3.png"/>)
+
+[//]: # (    <gallery-img url="/gakachuGallery_4.png"/>)
+
+[//]: # (    <gallery-img url="/gakachuGallery_5.png"/>)
+
+[//]: # (    <gallery-img url="/gakachuGallery_6.png"/>)
+
+[//]: # (</tempGallery>)
