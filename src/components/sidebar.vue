@@ -95,8 +95,14 @@ export default {
     nav .posts-col > .activeProject {
       border-left: 4px solid var(--color-blue) !important;
     }
+
     nav .posts-col > .activeProject > a {
       color: var(--color-blue);
+    }
+
+    nav .posts-col > p > a:hover {
+      background-color: var(--color-orange);
+      color: var(--color-light);
     }
 
     .title {
