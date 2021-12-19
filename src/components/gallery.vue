@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery-wrapper">
+  <div class="gallery-grid">
     <slot/>
   </div>
 </template>
@@ -11,32 +11,35 @@ export default {
 </script>
 
 <style scoped>
-  .gallery-wrapper {
-    margin-top: 50px;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+.gallery-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery-grid a {
+  display: block;
+  width: 33%;
+  max-height: 300px;
+  height: auto;
+}
+
+.gallery-grid > a:hover {
+  transform: scale(1.15);
+  transition: all .2s;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-grid a {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .gallery-grid a {
     width: 100%;
   }
-  .gallery-wrapper > a {
-    display: inline-block;
-    background-size: cover;
-    margin-top: -13px;
-    position: relative;
-    width: 33.3333%;
-    height: 0;
-    padding-bottom: 33.3333%;
-  }
-  @media screen and (max-width: 500px){
-    .gallery-wrapper > a {
-      width: 50%;
-      padding-bottom: 50%;
-    }
-  }
+}
 
-  @media screen and (max-width: 400px) {
-    .gallery-wrapper > a {
-      width: 100%;
-      padding-bottom: 100%;
-    }
-  }
 </style>

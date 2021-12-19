@@ -1,21 +1,20 @@
 <template>
-  <a class="gallery-image" target="_blank" :href="url" :style="style"></a>
+  <a target="_blank" :href="url">
+    <img :src="url" :alt="alt">
+  </a>
 </template>
 
 <script>
 export default {
   name: "galleryImg",
-  props: ['url'],
-  computed: {
-    style () {
-        return `background-image: url('${this.url}')`
-    }
-  }
+  props: ['url', 'alt'],
 }
 </script>
 
 <style scoped>
-  .gallery-image {
-    display: block;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 </style>
