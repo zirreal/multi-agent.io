@@ -13,8 +13,6 @@ import Icon from '~/components/Icon.vue'
 import gallery from '~/components/gallery.vue'
 import galleryImg from '~/components/galleryImg.vue'
 
-import tempGallery from '~/components/tempGallery.vue'
-
 
 <h2 class="callout">Robot Artist and Entrepreneur</h2>
 
@@ -131,19 +129,3 @@ import tempGallery from '~/components/tempGallery.vue'
 <iconButton type="OpenSea">OpenSea</iconButton>
 <iconButton type="Rarible">Rarible</iconButton>
 </buttonsRow>
-
-[//]: # (<tempGallery>)
-
-[//]: # (    <gallery-img url="/gakachuGallery_1.png"/>)
-
-[//]: # (    <gallery-img url="/gakachuGallery_2.png"/>)
-
-[//]: # (    <gallery-img url="/gakachuGallery_3.png"/>)
-
-[//]: # (    <gallery-img url="/gakachuGallery_4.png"/>)
-
-[//]: # (    <gallery-img url="/gakachuGallery_5.png"/>)
-
-[//]: # (    <gallery-img url="/gakachuGallery_6.png"/>)
-
-[//]: # (</tempGallery>)
