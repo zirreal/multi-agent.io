@@ -10,33 +10,7 @@
 <script>
 export default {
   name: "iconButton",
-  props: ['src', 'to', 'type'],
-  methods: {
-    redirect() {
-      if(this.$props.to === '' || this.$props.to === undefined) {
-        console.log('switch is on')
-        switch (this.$props.type) {
-          case 'Github':
-            window.location = this.$static.metadata.link_github
-            break
-          case 'Youtube':
-            window.location = this.$static.metadata.link_youtube
-            break
-          case 'OpenSea':
-            window.location = this.$static.metadata.link_opensea
-            break
-          case 'Rarible':
-            window.location = this.$static.metadata.link_rarible
-            break
-          default:
-            window.location = '/'
-            break;
-        }
-      } else {
-        window.location = this.$props.to
-      }
-    }
-  },
+  props: ['src', 'to'],
   computed: {
     url() {
       let links = {
