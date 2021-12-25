@@ -101,15 +101,6 @@ tr:not(:last-child) {
     border-bottom: 1px solid var(--color-dark);
 }
 
-@media screen and (max-width: 450px) {
-    tr:not(.tr__no_reverse) {
-        flex-direction: column;
-    }
-    tr:not(.tr__no_reverse) > td {
-        width: 100%;
-    }
-}
-
 .text-sea p, .text-sea li {
     margin-bottom: calc(var(--space)*2);
     text-align: justify !important;
@@ -357,3 +348,22 @@ input[type="submit"]:hover {
 .page-content {
     padding-bottom: calc(var(--space) * 4);
 }
+
+.media-p {
+    display: inline-flex;
+    padding-bottom: var(--space);
+}
+
+.media-p > * {
+    display: inline;
+    vertical-align: middle;
+}
+
+.media-p > *:not(:last-child) {
+    padding-right: var(--space);
+}
+
+.media-p:not(:last-of-type) {
+    border-bottom: 1px solid var(--color-dark);
+}
+
