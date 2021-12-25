@@ -13,6 +13,7 @@ export default {
 <style scoped>
 
 .gallery-grid {
+  margin-top: var(--space);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
