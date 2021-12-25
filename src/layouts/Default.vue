@@ -6,11 +6,12 @@
         <h1><slot name="title">Multi-Agent Systems</slot></h1>
         <div class="text">
           <slot/>
-           <h2>{{$ts('Apply to join us')}}</h2>
-          <formJoin/>
+          <div v-if="!isProjectsPage">
+            <h2>{{$ts('Apply to join us')}}</h2>
+            <formJoin/>
+          </div>
         </div>
       </div>
-
   </div>
 </template>
 
@@ -130,6 +131,11 @@ export default {
   components: {
     sidebar: () => import('../components/sidebar.vue'),
     formJoin: () => import('../components/formJoin.vue')
+  },
+  computed: {
+    isProjectsPage () {
+      return this.$route.path.split('/')[2] === '';
+    }
   }
 }
 </script>
