@@ -1,22 +1,16 @@
 <template>
-  <button @click="redirect" class="buttonWrapper">
-    <g-image v-if="type === 'OpenSea' && imgHref === undefined" src="~/assets/images/OpenSea.png"/>
-    <g-image v-if="type === 'Rarible' && imgHref === undefined" src="~/assets/images/Rarible.png"/>
-
-    <g-image v-if="type === 'Github' && imgHref === undefined" src="~/assets/images/GitHub.png"/>
-    <g-image v-if="type === 'Youtube' && imgHref === undefined" src="~/assets/images/YouTube.png"/>
-
-    <g-image v-if="imgHref !== undefined" :src="imgHref"/>
-    <div class="text-wrapper">
+  <g-link :to="url" class="button-outline">
+    <g-image :src="src"/>
+    <span>
       <slot/>
-    </div>
-  </button>
+    </span>
+  </g-link>
 </template>
 
 <script>
 export default {
   name: "iconButton",
-  props: ['imgHref', 'to', 'type'],
+  props: ['src', 'to', 'type'],
   methods: {
     redirect() {
       if(this.$props.to === '' || this.$props.to === undefined) {
@@ -42,36 +36,49 @@ export default {
         window.location = this.$props.to
       }
     }
+  },
+  computed: {
+    url() {
+      let links = {
+        opensea: this.$static.metadata.link_opensea,
+        youtube: this.$static.metadata.link_youtube,
+        rarible: this.$static.metadata.link_rarible,
+        github: this.$static.metadata.link_github,
+      }
+      return links[this.$props.to]
+    }
   }
 }
 </script>
 
 <style scoped>
-  .buttonWrapper {
-    display: flex;
+  .button-outline {
     border: 2px solid var(--color-blue);
     color: var(--color-blue);
     font-size: 1rem;
     font-weight: bold;
     padding: 11px;
-    align-items: center;
     gap: 11px;
     transition: all .2s;
     cursor: pointer;
   }
-  button img {
-    height: 29px;
-    width: auto;
-  }
-  .text-wrapper {
-    text-align: left;
-    flex-wrap: wrap;
+  .button-outline > * {
+    display: inline-block;
+    vertical-align: middle;
   }
 
-  button:hover {
+  .button-outline > *:not(:last-child) {
+    margin-right: var(--space);
+  }
+
+  .button-outline img {
+    max-width: 30px;
+  }
+
+  .button-outline:hover {
+    background-color: var(--color-light);
     border-color: var(--color-green);
     color: var(--color-green);
-    /*filter: saturate(.4);*/
   }
 </style>
 
