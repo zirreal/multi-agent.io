@@ -14,8 +14,9 @@
     font-size: 1rem;
     font-weight: bold;
     text-wrap: normal;
+    margin-right: var(--space);
   }
   .tags {
-    width: 90%;
+    width: 100%;
   }
 </style>
