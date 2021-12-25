@@ -350,6 +350,7 @@ input[type="submit"]:hover {
 }
 
 .media-p {
+    width: 100%;
     display: inline-flex;
     padding-bottom: var(--space);
 }
