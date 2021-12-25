@@ -40,8 +40,8 @@ import galleryImg from '~/components/galleryImg.vue'
 <textBlock>The main task of a robot as an entrepreneur is to support its activities using the accumulated capital. We ran an experiment in which Gaka-chu purchased canvases, paints, and brushes from a test automated system of an art shop, paying for the order with cryptocurrency.</textBlock>
 
 <buttonsRow>
-    <iconButton type="OpenSea">OpenSea</iconButton>
-    <iconButton type="Rarible">Rarible</iconButton>
+    <iconButton to="opensea" src="/OpenSea.png">OpenSea</iconButton>
+    <iconButton to="rarible" src="/Rarible.png">Rarible</iconButton>
 </buttonsRow>
 
 
@@ -88,27 +88,23 @@ import galleryImg from '~/components/galleryImg.vue'
 </table>
 
 <buttonsRow>
-    <iconButton type="Github">Github repository</iconButton>
+    <iconButton type="Github" src="/GitHub.png">Github repository</iconButton>
 </buttonsRow>
 
 <h2>R&D interests</h2>
 <ul>
-<li>Solving the inverse kinematics for 6 axis manipulator control when drawing.</li>
-<li>Task of web scraping for extracting the data for painting topics.</li>
-<li>Using cognitive technologies to generate topics.</li>
-<li>Determination of the working space using a depth camera.</li>
-<li>Finding the most profitable topics using statistics from the sale of paintings.</li>
+    <li>Solving the inverse kinematics for 6 axis manipulator control when drawing.</li>
+    <li>Task of web scraping for extracting the data for painting topics.</li>
+    <li>Using cognitive technologies to generate topics.</li>
+    <li>Determination of the working space using a depth camera.</li>
+    <li>Finding the most profitable topics using statistics from the sale of paintings.</li>
 </ul>
 
 <h2>Media</h2>
 
-<table>
-    <tbody>
-        <tr class="tr__no_reverse"><Icon type="paper"/><a href="https://forklog.com/robot-hudozhnik-gaka-chu-predstavil-svoi-pervye-nft/"><strong>Робот-художник Gaka-chu представил свои первые NFT</strong></a></tr>
-        <tr class="tr__no_reverse"><Icon type="paper"/><a href="https://news.itmo.ru/en/science/cyberphysics/news/9331/"><strong>Gaka-Chu: The Robot That Dreams of Being an Artist</strong></a></tr>
-        <tr class="tr__no_reverse"><Icon type="paper"/><a href="https://blog.aira.life/gaka-chu-d2f6cfa61390"><strong>“Gaka-Chu. The Robot-artist” project: small clumsy KUKA manipulator living in the big world of serious industrial robots</strong></a></tr>
-    </tbody>
-</table>
+<p class="media-p"><Icon type="paper"/><a href="https://forklog.com/robot-hudozhnik-gaka-chu-predstavil-svoi-pervye-nft/"><strong>Робот-художник Gaka-chu представил свои первые NFT</strong></a></p>
+<p class="media-p"><Icon type="paper"/><a href="https://news.itmo.ru/en/science/cyberphysics/news/9331/"><strong>Gaka-Chu: The Robot That Dreams of Being an Artist</strong></a></p>
+<p class="media-p"><Icon type="paper"/><a href="https://blog.aira.life/gaka-chu-d2f6cfa61390"><strong>“Gaka-Chu. The Robot-artist” project: small clumsy KUKA manipulator living in the big world of serious industrial robots</strong></a></p>
 
 <gallery>
     <gallery-img url="/gakachuGallery_1.png"/>
@@ -124,8 +120,8 @@ import galleryImg from '~/components/galleryImg.vue'
 <h2>Gaka-chu profiles</h2>
 
 <buttonsRow>
-<iconButton type="Github">Github</iconButton>
-<iconButton type="Youtube">YouTube</iconButton>
-<iconButton type="OpenSea">OpenSea</iconButton>
-<iconButton type="Rarible">Rarible</iconButton>
+<iconButton to="gihtub" src="/Github.png">Github</iconButton>
+<iconButton to="youtube" src="/YouTube.png">YouTube</iconButton>
+<iconButton to="opensea" src="/OpenSea.png">OpenSea</iconButton>
+<iconButton to="rarible" src="/Rarible.png">Rarible</iconButton>
 </buttonsRow>
