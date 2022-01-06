@@ -72,6 +72,17 @@ h2.callout {
     margin-bottom: calc(var(--space)*3);
 }
 
+h2.success {
+    color: var(--color-green);
+    display: flex;
+}
+
+h2.success > div {
+    display: inline-flex;
+    margin-left: 55px;
+}
+
+
 h2.tick:after {
     content: "";
     display: inline-block;
