@@ -1,9 +1,10 @@
 ---
 title: Gakachu
+subtitle: Robot Artist and Entrepreneur
+coverSrc: "/gakachuCover.png"
 published: true
 locale: 'en'
 ---
-import callout from '~/components/callout.vue'
 import smallHeader from '~/components/smallHeader.vue'
 import textBlock from '~/components/textBlock.vue'
 import buttonsRow from '~/components/buttonsRow.vue'

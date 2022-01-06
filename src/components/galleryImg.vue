@@ -1,6 +1,6 @@
 <template>
   <a target="_blank" :href="url">
-    <img :src="url" :alt="alt">
+    <g-image :src="url" :alt="alt"/>
   </a>
 </template>
 
