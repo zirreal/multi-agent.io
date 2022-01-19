@@ -20,8 +20,20 @@
 
         <nav>
             <p><g-link to="/about">{{$ts('About us')}}</g-link></p>
-            <p><g-link to="/contacts">{{$ts('Contacts')}}</g-link></p>
+            <p><g-link to="/projects">{{$ts('Projects')}}</g-link></p>
+            <div class="posts-col" v-if="$route.path.split('/')[1] === 'projects'">
+              <p v-for="edge in $static.sidebar.edges" :key="edge.node.id">
+                <g-link 
+                :to="edge.node.path"
+                v-if="edge.node.locale === $locale"
+                exact>
+
+                  {{edge.node.title}}
+                </g-link>
+              </p>
+            </div>
             <p><g-link to="/jobs">{{$ts('Jobs')}}</g-link></p>
+            <p><g-link to="/contacts">{{$ts('Contacts')}}</g-link></p>
         </nav>
 
         <!-- <nav v-show="$locale=='ru'">
@@ -70,6 +82,29 @@ export default {
         background-color: var(--color-orange);
     }
 
+    nav .posts-col {
+      margin-bottom: var(--space)
+    }
+
+    nav .posts-col a {
+      display: block;
+      color: var(--color-dark);
+      background-color: transparent;
+      padding-left: 10px;
+      border-left: 4px solid var(--color-dark);
+    }
+    
+    nav .posts-col a.active {
+      color: var(--color-blue);
+      border-color: var(--color-blue);
+      cursor: default;
+    }
+
+    nav .posts-col > p > a:hover:not(.active) {
+      color: var(--color-orange);
+      border-color: var(--color-orange);
+    }
+
     .title {
         margin: calc(var(--space)*2) 0
     }
@@ -92,4 +127,19 @@ export default {
         background-color: var(--color-orange);
         border-color: var(--color-orange);
     }
+
 </style>
+
+<static-query>
+  query {
+    sidebar: allPost {
+      edges {
+        node {
+          path
+          title
+          locale
+        }
+      }
+    }
+  }
+</static-query>

@@ -6,9 +6,14 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+  api.loadSource(async store => {
+    store.addMetadata('youtube', 'https://www.youtube.com/channel/UCH5OO4EPo8iKzbiO9A_89vw')
+    store.addMetadata('formNameJobs', 'jobs')
   })
+  // api.loadSource(({ addCollection }) => {
+
+    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+  // })
 
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/

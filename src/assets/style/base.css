@@ -63,6 +63,25 @@ dt { font-weight: bold; }
 h2.tick {
     color: var(--color-green)
 }
+h2.callout {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.25rem;
+    text-align: right;
+    margin-top: var(--space);
+    margin-bottom: calc(var(--space)*3);
+}
+
+h2.success {
+    color: var(--color-green);
+    display: flex;
+}
+
+h2.success > div {
+    display: inline-flex;
+    margin-left: 55px;
+}
+
 
 h2.tick:after {
     content: "";
@@ -73,6 +92,24 @@ h2.tick:after {
     background: url(/tick.svg) no-repeat 50% 50%;
     background-size: contain;
     margin-left: var(--space)
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+td {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid var(--color-dark);
 }
 
 .text-sea p, .text-sea li {
@@ -303,7 +340,7 @@ input[type="submit"]:hover {
     z-index: 10;
 }
 
-.isection-image img {
+img {
     display: block;
     max-width: 100%;
 }
@@ -322,3 +359,23 @@ input[type="submit"]:hover {
 .page-content {
     padding-bottom: calc(var(--space) * 4);
 }
+
+.media-p {
+    width: 100%;
+    display: inline-flex;
+    padding-bottom: var(--space);
+}
+
+.media-p > * {
+    display: inline;
+    vertical-align: middle;
+}
+
+.media-p > *:not(:last-child) {
+    padding-right: var(--space);
+}
+
+.media-p:not(:last-of-type) {
+    border-bottom: 1px solid var(--color-dark);
+}
+

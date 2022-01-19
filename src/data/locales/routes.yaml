@@ -10,3 +10,6 @@
 - path: '/jobs/'
   component: './src/pages/Jobs.vue'
   typename: 'page'
+- path: '/projects/'
+  component: './src/pages/Projects.vue'
+  typename: 'component'

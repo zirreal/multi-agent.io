@@ -5,7 +5,7 @@ cover: "./images/gakachu/cover.jpg"
 video: "https://youtu.be/GxlYxaykqTU"
 description: "Gaka-chu (from Japanese 画家 — gaka — artist, chu — in honor of Pikachu) is an industrial 6 axis manipulator, that has been re-equipped to draw with brushes and paints and provided with the software to sell its works and maintain self-sufficiency. Gaka-chu allows us to look beyond the line that separates robots as tools and robots as peers."
 published: true
-locale: "en"
+locale: "ru"
 ---
 
 ## Mission
