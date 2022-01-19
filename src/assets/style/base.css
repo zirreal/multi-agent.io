@@ -340,7 +340,7 @@ input[type="submit"]:hover {
     z-index: 10;
 }
 
-.isection-image img {
+img {
     display: block;
     max-width: 100%;
 }

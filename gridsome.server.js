@@ -7,10 +7,8 @@
 
 module.exports = function (api) {
   api.loadSource(async store => {
-    store.addMetadata('link_github', 'https://github.com/Multi-Agent-io/gaka-chu.online')
-    store.addMetadata('link_rarible', 'https://rarible.com/gakachu')
-    store.addMetadata('link_opensea', 'https://opensea.io/accounts/Gaka-Chu')
-    store.addMetadata('link_youtube', 'https://www.youtube.com/channel/UCT5_U0Nddr9UG2Z15ArdOLA')
+    store.addMetadata('youtube', 'https://www.youtube.com/channel/UCH5OO4EPo8iKzbiO9A_89vw')
+    store.addMetadata('formNameJobs', 'jobs')
   })
   // api.loadSource(({ addCollection }) => {
 

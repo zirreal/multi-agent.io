@@ -1,5 +1,5 @@
 <template>
-    <Layout>
+    <Layout :form="$static.metadata.formNameJobs">
         <template v-slot:title>{{$ts('Contacts')}}</template>
         <h2>{{$ts('LLC "Multi-agent systems"')}}</h2>
 
@@ -15,3 +15,11 @@
         </dl>
     </Layout>
 </template>
+
+<static-query>
+query {
+  metadata {
+    formNameJobs
+  }
+}
+</static-query>
