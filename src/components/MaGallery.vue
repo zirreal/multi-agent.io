@@ -18,8 +18,10 @@
 <script>
 export default {
   name: 'MaGallery',
-  data: {
-      links: {}
+  data() {
+      return {
+        links: {}
+      }
   },
   created() {
       if(this.$slots.default) {

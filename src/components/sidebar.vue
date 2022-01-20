@@ -21,7 +21,7 @@
         <nav>
             <p><g-link to="/about">{{$ts('About us')}}</g-link></p>
             <p><g-link to="/projects">{{$ts('Projects')}}</g-link></p>
-            <div class="posts-col" v-if="$route.path.split('/')[1] === 'projects'">
+            <!-- <div class="posts-col" v-if="$route.path.split('/')[1] === 'projects'">
               <p v-for="edge in $static.sidebar.edges" :key="edge.node.id">
                 <g-link 
                 :to="edge.node.path"
@@ -31,7 +31,7 @@
                   {{edge.node.title}}
                 </g-link>
               </p>
-            </div>
+            </div> -->
             <p><g-link to="/jobs">{{$ts('Jobs')}}</g-link></p>
             <p><g-link to="/contacts">{{$ts('Contacts')}}</g-link></p>
         </nav>
