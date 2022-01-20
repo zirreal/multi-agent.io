@@ -6,14 +6,16 @@
         <h1><slot name="title">Multi-Agent Systems</slot></h1>
         <h2 class="callout" v-if="$slots.subtitle"><slot name="subtitle"></slot></h2>
 
-        <div class="text">
-          <slot/>
+        <transition name="fade" appear>
+          <div class="text">
+            <slot/>
 
-          <template v-if="form === $static.metadata.formNameJobs">
-            <h2>{{$ts('Apply to join us')}}</h2>
-            <formJoin/>
-          </template>
-        </div>
+            <template v-if="form === $static.metadata.formNameJobs">
+              <h2>{{$ts('Apply to join us')}}</h2>
+              <formJoin/>
+            </template>
+          </div>
+        </transition>
       </div>
 
   </div>
@@ -35,7 +37,17 @@ query {
   h2.callout {
     margin-top: 0;
   }
-</style>>
+</style>
+
+<style>
+  .fade-enter-active {
+    transition: opacity .5s;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
+</style>
 
 <script>
 export default {
