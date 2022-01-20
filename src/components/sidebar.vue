@@ -23,7 +23,7 @@
             <div class="nav-line"><g-link :to="localeSlash + 'about'">{{$ts('About us')}}</g-link></div>
             <div class="nav-line">
               <g-link class="parent" :to="'/projects' + localeSlash">{{$ts('Projects')}}</g-link>
-              <!-- <div class="child">
+              <div class="child">
                 <div v-for="edge in $static.sidebar.edges" :key="edge.node.id">
                   <g-link 
                   :to="edge.node.path"
@@ -33,7 +33,7 @@
                     {{edge.node.title}}
                   </g-link>
                 </div>
-              </div> -->
+              </div>
             </div>
 
             <div class="nav-line"><g-link :to="localeSlash + 'jobs'">{{$ts('Jobs')}}</g-link></div>
@@ -152,6 +152,7 @@ export default {
     sidebar: allPost {
       edges {
         node {
+          id
           path
           title
           locale
