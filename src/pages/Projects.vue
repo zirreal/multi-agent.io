@@ -85,6 +85,13 @@ export default {
     animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
+  @media screen and (max-width: 600px) {
+    .projects > a .projects-text {
+      left: 0;
+      bottom: var(--space)
+    }
+  }
+
   @keyframes title {
     from{
       transform: translateX(calc(var(--space)*2));

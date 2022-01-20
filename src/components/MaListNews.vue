@@ -8,6 +8,7 @@
     section ul {
         font-weight: bold;
         list-style: url("../assets/images/i-news.svg") outside;
+        padding-left: 2rem;
     }
 
     section ul li {
