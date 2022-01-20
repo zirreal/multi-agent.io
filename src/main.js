@@ -30,4 +30,14 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('MaGallery', MaGallery)
   Vue.component('MaTitle', MaTitle)
   Vue.component('MaGmap', MaGmap)
+
+  // GA
+  head.script.push({
+    src: 'https://www.googletagmanager.com/gtag/js?id=G-L4Z0XR6BR2',
+    async: true
+  })
+
+  head.script.push({
+    innerHTML: "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-L4Z0XR6BR2');"
+  })
 }
