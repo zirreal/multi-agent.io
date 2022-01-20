@@ -24,7 +24,7 @@
             <div class="nav-line">
               <g-link class="parent" :to="'/projects' + localeSlash">{{$ts('Projects')}}</g-link>
 
-              <div class="child">
+              <!-- <div class="child">
                 <div v-for="edge in $static.sidebar.edges" :key="edge.node.id">
                   <g-link 
                   :to="edge.node.path"
@@ -34,7 +34,7 @@
 
                   </g-link>
                 </div>
-              </div>
+              </div> -->
 
             </div>
 
@@ -60,9 +60,6 @@ export default {
         return '/' + this.$locale + '/'
       }
     }
-  },
-  mounted(){
-    console.log('debug ', this.$static.sidebar.edges)
   }
 }
 </script>
