@@ -32,12 +32,21 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('MaGmap', MaGmap)
 
   // GA
+  // head.script.push({
+  //   src: 'https://www.googletagmanager.com/gtag/js?id=G-L4Z0XR6BR2',
+  //   async: true
+  // })
+  // head.script.push({
+  //   innerHTML: "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-L4Z0XR6BR2');"
+  // })
+
+  // GTM
   head.script.push({
-    src: 'https://www.googletagmanager.com/gtag/js?id=G-L4Z0XR6BR2',
-    async: true
+    innerHTML: "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5SMG36R');"
   })
-  head.script.push({
-    innerHTML: "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-L4Z0XR6BR2');"
+  head.noscript.push({
+    body: true,
+    innerHTML: '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SMG36R" height="0" width="0" style="display:none;visibility:hidden"></iframe>'
   })
 
   // Ya metrika
