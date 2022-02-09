@@ -8,7 +8,7 @@ By means of web3 technologies and a set of flexible software modules, Feecc enab
 <br>
 Thanks to Feecc, the enterprise can not only digitize its processes and get rid of annoying bureaucracy and lawsuits, but also attract the attention of new consumers to the product, increasing trust in it."
 published: true
-locale: 'en'
+locale: 'ru'
 ---
 
 ## Features 
