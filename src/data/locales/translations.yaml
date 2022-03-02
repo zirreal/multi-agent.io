@@ -79,17 +79,17 @@
   ru: Опыт команды
 
 - alias: Manaenko_position
-  en: The head of the laboratory, ICT assistant, postgraduate student of the 2nd year of study.
-  ru: Руководитель лаборатории, ассистент ИКТ, аспирант 2-ого года обучения.
+  en: The head of the laboratory, ICT assistant, postgraduate student of the 3d year of study.
+  ru: Руководитель лаборатории, ассистент ИКТ, аспирант 3-ого года обучения.
 
 - alias: Berman_position
-  en: A scientific administrator, an engineer of CSR, a post-graduate student of the 2nd year of study.
-  ru: Научный администратор, инженер СУиР, аспирант 2-ого года обучения.
+  en: A scientific administrator, an engineer of CSR, a post-graduate student of the 3d year of study.
+  ru: Научный администратор, инженер СУиР, аспирант 3-ого года обучения.
 
 - alias: Kapitonov_position
   en: Curator of the laboratory, Ph.D., dean of ICT.
   ru: Куратор лаборатории, к.т.н, декан ИКТ.
-  
+
 - alias: Research area and objectives
   en: Research area and objectives
   ru: Область исследования и цели
