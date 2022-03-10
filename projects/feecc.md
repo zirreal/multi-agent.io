@@ -79,6 +79,8 @@ A module for viewing, analysis and management of work processes scenarios:
 Upon request, we can develop a module for your unique equipment, including integration into Feecc Dashboard.
 </ma-section>
 
+https://youtu.be/WhtOJtGjAok
+
 ## Repositories
 
 <ma-line>
