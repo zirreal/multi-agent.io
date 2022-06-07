@@ -82,6 +82,8 @@ IPFS/Pinata для контентно-адресуемого p2p-доступа 
 
 https://youtu.be/WhtOJtGjAok
 
+https://youtu.be/fA1DfrQnKjk
+
 ## Репозитории
 
 <ma-line>
