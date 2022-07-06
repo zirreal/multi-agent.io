@@ -1,8 +1,8 @@
 <template>
   <Layout>
     <template v-slot:title>{{$ts('Projects')}}</template>
-    <p v-if="$locale=='en'">Let us tell you about our R&D projects. All of them has scientific mission and real-life implementation. Some of them we can build for business, bring IoT to your life.</p>
-    <p v-if="$locale=='ru'">Расскажем о наших R&D проектах. Все они имеют научную миссию и реальное воплощение. Некоторые из них мы можем построить для бизнеса, внедрить IoT в вашу жизнь.</p>
+    <p>Let us tell you about our R&D projects. All of them has scientific mission and real-life implementation. Some of them we can build for business, bring IoT to your life.</p>
+        <!-- <h3 v-if="$locale=='ru'">Расскажем о наших R&D проектах. Все они имеют научную миссию и реальное воплощение. Некоторые из них мы можем построить для бизнеса, внедрить IoT в вашу жизнь.</p> -->
 
     <section class="projects" v-if="$page.projects.edges.length > 0">
       <g-link
