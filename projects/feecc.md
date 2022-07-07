@@ -68,11 +68,13 @@ IPFS / Pinata for content-addressable p2p access to data; private node on reques
 ## Additional Services
 
 <ma-section title="Feecc Dashboard">
+
 A module for viewing, analysis and management of work processes scenarios:
 
 * Information on the work stages 
 * Browsing employee information and managing their roles and access
 * Browsing of digital passports and their status
+
 </ma-section>
 
 <ma-section title="Non-standard equipment support">

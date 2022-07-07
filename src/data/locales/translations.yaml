@@ -177,6 +177,10 @@
   en: Projects
   ru: Проекты
 
+- alias: projects description
+  en: Let us tell you about our R&D projects. All of them has scientific mission and real-life implementation. Some of them we can build for business, bring IoT to your life.
+  ru: Расскажем о наших R&D проектах. Все они имеют научную миссию и реальное воплощение. Некоторые из них мы можем построить для бизнеса, внедрить IoT в вашу жизнь.
+
 # Form 'Apply to join us'
 
 - alias: Apply to join us
