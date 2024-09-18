@@ -88,9 +88,9 @@ https://youtu.be/fA1DfrQnKjk
 ## Repositories
 
 <ma-line>
-    <ma-button href="https://github.com/Multi-Agent-io/feecc-io-gateway"><img src="./images/shared/GitHub.png"/><span>Feecc IO Gateway</span></ma-button>
-    <ma-button href="https://github.com/Multi-Agent-io/feecc-workbench-daemon"><img src="./images/shared/GitHub.png"/><span>Feecc Workbench Daemon</span></ma-button>
-    <ma-button href="https://github.com/Multi-Agent-io/feecc-analytics-backend"><img src="./images/shared/GitHub.png"/><span>Feecc Dashboard</span></ma-button>
+    <ma-button href="https://github.com/feecc/workbench-daemon"><img src="./images/shared/GitHub.png"/><span>Feecc Workbench Daemon</span></ma-button>
+    <ma-button href="https://github.com/feecc/workbench-frontend"><img src="./images/shared/GitHub.png"/><span>Feecc Workbench Frontend</span></ma-button>
+    <ma-button href="https://github.com/feecc/ipfs-gateway"><img src="./images/shared/GitHub.png"/><span>Feecc IPFS Gateway</span></ma-button>
 </ma-line>
 
 ## Partners 
