@@ -1,0 +1,41 @@
+body {
+
+	--base-font-size: 1.2rem;
+	--font-family: "Roboto Flex", 'Roboto', system-ui, sans-serif;
+	--font-flex-base: 'wght' 500, 'wdth' 148, 'opsz' 32, 'XTRA' 520, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712,  'GRAD' 132;
+	--font-flex-bold: 'wght' 700, 'wdth' 148, 'opsz' 64, 'XTRA' 520, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'GRAD' 132;
+	--font-flex-medium: 'wght' 500, 'wdth' 148, 'opsz' 34, 'XTRA' 520, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712, 'GRAD' 132;
+	--font-flex-normal: 'wght' 400, 'wdth' 110, 'opsz' 34, 'XTRA' 520, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
+	--font-flex-light: 'wght' 350, 'wdth' 148, 'opsz' 32, 'XTRA' 520, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
+	--font-flex-italic-light: 'wght' 350, 'wdth' 148, 'opsz' 32, 'XTRA' 520, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712,  'slnt' -10;
+
+	--color-dark: #191919;
+	--color-light: #ffffff;
+	--color-blue-link:#dbebfb;
+	--color-green: #175973;
+	--color-dark-blue: #a0c5e8;
+
+	--text-color: #191919;
+	--text-accent: #4285f4;
+	--text-secondary: #d9d9d9;
+
+	/* helpers */
+  --space: 2rem;
+	--space-half: 1rem;
+  --space-section: calc(var(--space) * 3);
+  --content-width: 1600px;
+}
+
+body.dark {
+	--color-dark: #ffffff;
+	--color-light: #191919;
+	--text-color: var(--color-dark);
+}
+
+
+@media screen and (max-width: 450px) {
+	body {
+		--space: 1.2rem;
+		--screen-padding-left: 1.5rem
+	}
+}

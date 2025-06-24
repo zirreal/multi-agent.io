@@ -1,0 +1,98 @@
+<!-- component for cookie banner -->
+<div id="cookie-consent-banner">
+  <div class="layout">
+    <p>Продолжая работу на сайте, Вы соглашаетесь с <a href="/terms/" class="underline" aria-label="Узнать больше об условия использования">условиями использования</a> и <a href="/privacy-policy/" class="underline" aria-label="Узнать больше о политике конфиденциальности">политикой конфиденциальности</a>. А еще мы используем <a href="/cookies/" class="underline" aria-label="Узнать больше об использования cookies">cookies</a>.
+    </p>
+    <button class="cookie-btn">Продолжить</button>
+  </div>
+</div>
+
+<script>
+
+  const cookieBanner = document.querySelector<HTMLElement>('#cookie-consent-banner');
+  const cookieButton = document.querySelector<HTMLButtonElement>('.cookie-btn');
+
+  const COOKIE_AGREED_KEY = 'cookieAgreed';
+
+  const hasConsented = (): boolean => {
+    return localStorage.getItem(COOKIE_AGREED_KEY) === 'true';
+  };
+
+  if (cookieBanner) {
+    cookieBanner.classList.toggle('active', !hasConsented());
+  }
+
+  cookieButton?.addEventListener('click', () => {
+    if (cookieBanner) {
+      cookieBanner.classList.remove('active');
+    }
+    localStorage.setItem(COOKIE_AGREED_KEY, 'true');
+  });
+
+</script>
+
+<style>
+  #cookie-consent-banner {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    margin: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, .9);
+    z-index: 999999;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -ms-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0,100%,0);
+    -ms-transform: translate3d(0,100%,0);
+    -o-transform: translate3d(0,100%,0);
+    transform: translate3d(0, 100%, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  #cookie-consent-banner.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .layout {
+    padding: calc(var(--space) * 0.5);
+  }
+
+  .layout p {
+    font-size: var(--base-font-size);
+    margin-bottom: var(--space-half);
+  }
+
+  .cookie-btn{
+    font-size: var(--base-font-size);
+    color: var(--color-dark-blue);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.33s ease-in-out opacity;
+  }
+
+  .cookie-btn:hover {
+    opacity: 0.7;
+  }
+
+  #cookie-consent-banner a {
+    display: inline-block;
+    color: var(--color-blue-link)
+  }
+
+  #cookie-consent-banner a:hover::after {
+    background-color:#fff;
+  }
+</style>

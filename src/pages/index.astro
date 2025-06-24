@@ -1,0 +1,613 @@
+---
+import { SwiperSlide} from "astro-swiper";
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Layout.astro';
+import SwiperComponent from '../components/SwiperComponent.astro';
+import CatOnVacuum from '../components/CatOnVacuum.astro';
+
+// images
+import HASS from '../assets/img/hass-logo.svg';
+
+import FEAT1 from '../assets/img/feat-decor-1.webp';
+import FEAT2 from '../assets/img/feat-decor-2.webp';
+import FEAT3 from '../assets/img/feat-decor-3.webp';
+import FEAT4 from '../assets/img/feat-decor-4.webp';
+
+import VIDEO from '../assets/img/video-bg.webp';
+
+import SHFEATURES1 from '../assets/img/sh-features.webp';
+import SHFEATURES2 from '../assets/img/sh-features-2.webp';
+import SHFEATURES3 from '../assets/img/sh-features-3.webp';
+import SHFEATURES4 from '../assets/img/sh-features-4.webp';
+
+import STEP1 from '../assets/img/step-1.webp';
+import STEP2 from '../assets/img/step-2.webp';
+import STEP3 from '../assets/img/step-3.webp';
+import STEP4 from '../assets/img/step-4.webp';
+
+import CASE1 from '../assets/img/case-1.webp';
+
+---
+
+<Layout>
+  <!-- YourSpace intro -->
+  <section class="home-page-main">
+    <div class="layout">
+      <h1>
+        YourSpace -
+        <span class="title-blue">умный дом, который объединяет всё!</span>
+      </h1>
+      <div class="home-page-main__text">
+        <p>Устройства любых экосистем в одном приложении и сценарии, разработанные для Вас</p>
+        <div class="home-page-main__hass-block">
+          <Image src={HASS} alt="home assistant logo" />
+          <p><span>Работает на,</span> Home Assistant</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More about Smart Home -->
+  <section class="home-page-more">
+    <div class="layout">
+      <h2 class="title-blue">Не зависит от бренда, Не требует перепланировки</h2>
+      <div class="home-page-more__grid">
+        <div class="home-page-more__grid-item">
+          <Image src={FEAT1} alt="" aria-hidden="true" />
+          <div>
+            <h3>Поддержка тысяч устройств</h3>
+            <p>Среди них точно есть то, что подойдет именно Вам</p>
+          </div>
+        </div>
+        <div class="home-page-more__grid-item">
+          <Image src={FEAT2} alt="" aria-hidden="true" />
+          <div>
+            <h3>Работает с умной колонкой</h3>
+            <p>Среди них точно есть то, что подойдет именно Вам</p>
+          </div>
+        </div>
+        <div class="home-page-more__grid-item">
+          <Image src={FEAT3} alt="" aria-hidden="true" />
+          <div>
+            <h3>Современное решение без облаков и проводов</h3>
+            <p>Не нужно заводить учетную запись и прокладывать слаботочк</p>
+          </div>
+        </div>
+        <div class="home-page-more__grid-item">
+          <Image src={FEAT4} alt="" aria-hidden="true" />
+          <div>
+            <h3>Выглядит стильно</h3>
+            <p>Не нужно заводить учетную запись и прокладывать слаботочк</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-page-more__video">
+        <Image src={VIDEO} alt="" aria-hidden="true" />
+          <iframe
+          src="https://rutube.ru/play/embed/0784c5b5e0da8d6bc9bc0f8cdcaf60f8/"
+          title="Умный дом, который объединяет все!"
+          frameborder="0"
+          allow="encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="home-page__link">
+        <a href="/about-us/" class="link-with-arrow underline" aria-label="Узнать больше о нашей компании">О нас</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smart Home features -->
+  <section id="features" class="home-page-features">
+    <div class="layout">
+      <SwiperComponent>
+        <SwiperSlide>
+          <div class="home-page-features__slide">
+            <h2>Возможности умного дома</h2>
+
+            <h3 class="title-blue">Контроль климата</h3>
+            <ul>
+              <li>Тёплый пол по утрам</li>
+              <li>Котел и батареи не жгут ресурсы, пока Вы на работе</li>
+              <li>Комфортная среда, когда Вы дома</li>
+            </ul>
+          </div>
+          <div class="home-page-features__slide-image">
+            <Image src={SHFEATURES1} alt="smart home example"/>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="home-page-features__slide-image">
+            <Image src={SHFEATURES2} alt="smart home example"/>
+          </div>
+          <div class="home-page-features__slide">
+            <h2>Возможности умного дома</h2>
+
+            <h3 class="title-blue">Умные устройства</h3>
+            <ul>
+              <li>Шторы открываются по будильнику на телефоне</li>
+              <li>Свет приглушается при включении фильма</li>
+              <li>Робот-пылесос знает, когда Вы не дома</li>
+            </ul>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="home-page-features__slide">
+            <h2>Возможности умного дома</h2>
+
+            <h3 class="title-blue">Световые решения</h3>
+            <ul>
+              <li>Входите в освещённый дом</li>
+              <li>Настройте тёплый свет для уютного вечера</li>
+              <li>Выключайте всё одной кнопкой</li>
+            </ul>
+          </div>
+          <div class="home-page-features__slide-image">
+            <Image src={SHFEATURES3} alt="smart home example"/>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div class="home-page-features__slide-image">
+            <Image src={SHFEATURES4} alt="smart home example"/>
+          </div>
+          <div class="home-page-features__slide">
+            <h2>Возможности умного дома</h2>
+
+            <h3 class="title-blue">Безопасность</h3>
+            <ul>
+              <li>Кран перекроет воду или газ в случае утечки</li>
+              <li>Датчик CO2 предупредит необходимость проверить</li>
+              <li>Датчик контакта сообщит о несанкционированном доступе</li>
+            </ul>
+          </div>
+        </SwiperSlide>
+      </SwiperComponent>
+    </div>
+  </section>
+
+  <!-- Work steps -->
+  <section id="steps" class="home-page-work-steps">
+    <div class="layout">
+      <h2>Этапы работы</h2>
+      <div class="home-page-work-steps__wrapper">
+      <div class="home-page-work-steps__item">
+        <div class="home-page-work-steps__pic">
+          <Image src={STEP1} alt="первый этап работы" />
+        </div>
+        <div class="home-page-work-steps-divider home-page-work-steps-divider--first">
+          <span>1</span>
+        </div>
+        <div class="home-page-work-steps__description">
+          <h3>Обсуждаем пожелания</h3>
+          <p>Мы предлагаем, а Вы выбираете! Каталог сценариев и многолетний опыт интеграций</p>
+        </div>
+      </div>
+
+      <div class="home-page-work-steps__item">
+        <div class="home-page-work-steps__pic">
+          <Image src={STEP2} alt="второй этап работы" />
+        </div>
+        <div class="home-page-work-steps-divider">
+          <span>2</span>
+        </div>
+        <div class="home-page-work-steps__description">
+          <h3>Проводим замер</h3>
+          <p>Осматриваем электрику, умные и традиционные устройства, обсуждаем реализацию</p>
+        </div>
+      </div>
+
+      <div class="home-page-work-steps__item">
+        <div class="home-page-work-steps__pic">
+          <Image src={STEP3} alt="третий этап работы" />
+        </div>
+        <div class="home-page-work-steps-divider">
+          <span>3</span>
+        </div>
+        <div class="home-page-work-steps__description">
+          <h3>Собираем умный дом</h3>
+          <p>Устанавливаем сервер, монтируем электрику, приклеиваем датчики</p>
+        </div>
+      </div>
+
+      <div class="home-page-work-steps__item">
+        <div class="home-page-work-steps__pic home-page-work-steps__pic--last">
+          <Image src={STEP4} alt="четвертый этап работы" />
+        </div>
+        <div class="home-page-work-steps-divider home-page-work-steps-divider--last">
+          <span>4</span>
+        </div>
+        <div class="home-page-work-steps__description home-page-work-steps__description--last">
+          <h3>Программируем под Вас</h3>
+          <p>Подстраиваем умный дом под Ваши привычки, все тщательно тестируем и оставляем инструкции</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cases -->
+  <section id="cases" class="home-page-cases">
+    <div class="layout">
+      <h2>Кейсы</h2>
+      <SwiperComponent>
+        <SwiperSlide>
+          <div class="home-page-cases__slide-image">
+            <Image src={CASE1} alt="case example"/>
+          </div>
+          <div class="home-page-cases__info">
+            <h3 class="title-blue">Квартира-офис Фрунзе</h3>
+            <h4>Результат:</h4>
+            <ul>
+              <li>Напоминание о незакрытых окнах на выходе через умную колонку</li>
+              <li>Интеграция старого кондиционера и управление радиаторами отопления (6 штук)</li>
+              <li>Управление всеми группами света (17), добавление умных светильников, пылесоса, увлажнителя</li>
+              <li>Автоматический свет в санузлах Счётчик э/э</li>
+            </ul>
+
+            <h4>Стоимость проекта:</h4>
+            <span class="title-blue">₽ 171,800</span>
+          </div>
+        </SwiperSlide>
+      </SwiperComponent>
+      <div class="home-page__link">
+        <a href="/about-us/" class="link-with-arrow underline" aria-label="Запланировать замер для вашего умного дома">Запланировать замер</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAT -->
+  <CatOnVacuum/>
+
+</Layout>
+
+
+<style>
+
+  h1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-half);
+    margin-bottom: var(--space);
+    z-index: 2;
+  }
+
+  h1 .title-blue {
+    font-variation-settings: var(--font-flex-base);
+    text-transform: uppercase;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .home-page__link {
+    max-width: 880px;
+    margin: 0 auto;
+    font-size: calc(var(--base-font-size) * 1.5);
+    text-align: right;
+  }
+
+  .home-page__link a {
+    font-variation-settings: var(--font-flex-medium);
+  }
+
+  /* main block */
+
+  .home-page-main {
+    position: relative;
+    min-height: 60vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: var(--space-section);
+  }
+
+  .home-page-main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('../assets/img/hass-decor-image.webp');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  .home-page-main__text {
+    position: relative;
+    max-width: 465px;
+    z-index: 1;
+  }
+
+  .home-page-main__text p {
+    font-weight: 500;
+    margin-bottom: var(--space);
+  }
+
+  .home-page-main__hass-block {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--space) * 1.4);
+  }
+
+  .home-page-main__hass-block p {
+    margin-bottom: 0;
+    font-size: calc(var(--base-font-size) * 1.5);
+  }
+
+  .home-page-main__hass-block span {
+    display: block;
+  }
+
+  /* more block */
+
+  .home-page-more {
+    margin-bottom: var(--space);
+  }
+
+  .home-page-more h2 { 
+    text-align: center;
+    font-variation-settings: inherit;
+    text-transform: uppercase;
+    margin-bottom: calc(var(--space) * 1.5);
+  }
+
+  .home-page-more__grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space);
+    margin-bottom: calc(var(--space) * 3);
+  }
+
+  .home-page-more__grid h3 {
+    margin-bottom: var(--space-half);
+  }
+
+  .home-page-more__grid-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space);
+  }
+
+  .home-page-more__grid-item img {
+    max-width: 80px;
+  }
+
+  .home-page-more__video {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: var(--space);
+  }
+
+  .home-page-more__video img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .home-page-more__video iframe {
+    position: absolute;
+    top: 0%; 
+    left: 12.5%; 
+    width: 75%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  /* features block */
+
+  .home-page-features {
+    margin-bottom: calc(var(--space) * 2)
+  }
+
+  .home-page-features__slide li {
+    font-variation-settings: var(--font-flex-normal);
+  }
+
+  /* steps block */
+
+  .home-page-work-steps {
+    margin-bottom: var(--space-section);
+  }
+
+  .home-page-work-steps__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .home-page-work-steps__pic {
+    max-width: 215px;
+    min-height: 276px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .home-page-work-steps__pic {
+    margin-right: var(--space);
+  }
+
+   .home-page-work-steps-divider {
+    position: relative;
+   }
+
+  .home-page-work-steps-divider span {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: var(--space) 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    font-size: calc(var(--base-font-size) * 1.5);
+    background-color: var(--color-dark-blue);
+    border-radius: 100%;
+    z-index: 2;
+  }
+
+  .home-page-work-steps-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-dark-blue);
+  }
+
+  .home-page-work-steps-divider--last::before {
+    height: 0;
+  }
+
+  .home-page-work-steps-divider--last::after {
+    content: url("data:image/svg+xml,%3Csvg width='50' height='42' viewBox='0 0 50 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_4107_17320)'%3E%3Cpath d='M0 8.20977C2.35 9.73977 4.57 11.4698 6.66 13.3498C8.78 15.1998 10.74 17.2298 12.61 19.3498C14.46 21.4798 16.21 23.7298 17.79 26.0898C19.39 28.4398 20.84 30.8998 22.13 33.4498L16.72 33.6198C18.17 29.8298 20.07 26.2298 22.26 22.8498C24.48 19.4898 27.01 16.3398 29.8 13.4798C32.6 10.6198 35.64 8.03977 38.89 5.76977C42.15 3.51977 45.56 1.51977 49.2 0.00976562C46.42 2.80977 43.66 5.48977 41.08 8.29977C38.48 11.0898 36.01 13.9498 33.71 16.9098C31.41 19.8698 29.25 22.8998 27.33 26.0698C25.38 29.2198 23.68 32.4898 22.2 35.8598L19.52 41.9698L16.79 36.0298C15.68 33.6098 14.49 31.2298 13.22 28.8698C11.94 26.5198 10.6 24.1898 9.17 21.8898C7.76 19.5798 6.25 17.3298 4.73 15.0398L0 8.20977Z' fill='%23A0C5E8'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_4107_17320'%3E%3Crect width='49.22' height='41.96' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    top: -50px;
+    right: 35%;
+  }
+
+  .home-page-work-steps__description {
+    margin-right: var(--space);
+  }
+
+  .home-page-work-steps__description h3 {
+    max-width: 200px;
+    margin-bottom: var(--space-half);
+  }
+
+  .home-page-work-steps__description p {
+    max-width: 280px;
+    font-size: var(--base-font-size);
+    font-variation-settings: var(--font-flex-normal);
+  }
+
+  .home-page-work-steps__pic--last, .home-page-work-steps__description--last {
+    margin-right: 0;
+  }
+
+  /* cases block */
+
+  .home-page-cases .swiper-slide {
+    align-items: flex-start;
+    gap: calc(var(--space) * 2);
+  }
+
+  .home-page-cases__slide-image {
+    max-width: 814px;
+  }
+
+  .home-page-cases h4 {
+    margin-bottom: calc(var(--space-half) * 0.5);
+  }
+
+  .home-page-cases ul {
+    margin-bottom: var(--space);
+    padding-left: var(--space-half);
+    font-variation-settings: var(--font-flex-normal);
+  }
+
+  .home-page-cases .home-page__link {
+    max-width: unset;
+  }
+
+  .home-page-cases .home-page__link span {
+    font-variation-settings: var(--font-flex-italic-light);
+    text-transform: capitalize;
+  }
+
+  /* media queries */
+
+  @media screen and (max-width: 850px) {
+    .home-page-more__grid, .home-page-work-steps__wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .swiper-slide  {
+      flex-direction: column;
+    }
+
+    .home-page-work-steps__pic, .home-page-work-steps__description {
+      margin-right: 0;
+    }
+
+    .home-page-work-steps__pic {
+      min-height: auto;
+      justify-self: unset;
+      align-self: center;
+      margin-bottom: var(--space);
+    }
+
+    .home-page-work-steps-divider span{
+      justify-self: unset;
+    }
+
+    .home-page-work-steps-divider::before {
+      left: 0;
+    }
+
+    .home-page-work-steps__wrapper {
+      gap: var(--space);
+    }
+
+    .home-page-work-steps__item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home-page-work-steps-divider {
+      order: -1;
+      margin-bottom: var(--space-half);
+    }
+
+    .home-page-work-steps-divider--last::before {
+      height: 2px;
+    }
+
+    .home-page-work-steps-divider--last::after {
+      top: 70px;
+      right: 0%;
+    }
+
+    .home-page-work-steps__description {
+      text-align: center;
+    }
+
+    .home-page-work-steps__description h3 {
+      max-width: unset;
+    }
+
+    .home-page-work-steps__description p {
+      max-width: unset;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .home-page-main::after  {
+      display: block;
+      position: static;
+      width: 100%;
+      height: 330px;
+    }
+  }
+</style>

@@ -1,0 +1,197 @@
+.rights h1 {
+  text-align: center;
+  margin-bottom: calc(var(--space) * 0.5);
+}
+
+.rights h2 {
+  margin-bottom: 10px;
+  font-size: calc(var(--base-font-size) * 2.3);
+  text-transform: lowercase;
+}
+
+.rights h2::first-letter {
+  text-transform: uppercase;
+}
+
+.rights h3 {
+  margin-bottom: 0;
+}
+
+.rights .rights__content h2 {
+  padding-left: 48px;
+}
+
+.rights h2.text-left {
+  padding-left: 0;
+}
+
+.rights a {
+  display: inline-block;
+  font-variation-settings: var(--font-flex-bold);
+  color: var(--color-green)
+}
+
+.rights p {
+  font-variation-settings: inherit;
+  margin-bottom: var(--space);
+}
+
+.rights__update {
+  margin-bottom: var(--space);
+  text-align: center;
+}
+
+.rights__update b, .rights__content b {
+  font-variation-settings: var(--font-flex-bold);
+}
+
+.rights p.rights__paragraph-attention {
+  font-variation-settings: var(--font-flex-bold);
+}
+
+.rights ol {
+  list-style: none;
+  counter-reset: item;
+}
+
+.rights ol li {
+  position: relative;
+}
+
+.rights ol li.list__item--ol::before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  font-size: 26px;
+  font-weight: 600;
+  font-variation-settings: var(--font-flex-medium);
+}
+
+.rights .list__item--ol:not(:last-child) {
+  margin-bottom: calc(var(--space) * 1.8);
+}
+
+.rights ul {
+  list-style: disc;
+  padding-left: calc(var(--space) * 1.8);
+}
+
+.rights ul li {
+  margin-bottom: var(--space);
+}
+
+.rights .list--unordered {
+  list-style: none;
+  padding-left: var(--space-half);
+}
+
+.rights-sublist__items  {
+  padding: var(--space-half) 15px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-half);
+}
+
+.rights-sublist__items a {
+  word-break: break-all;
+}
+
+.rights .hide {
+  display: none;
+}
+
+.rights-address {
+  margin-top: calc(var(--space) * 2.5);
+  display: flex;
+  flex-direction: column;
+  font-variation-settings: var(--font-flex-bold);
+  gap: var(--space-half);
+}
+
+.rights-address address {
+  font-style: normal;
+}
+
+@media screen and (max-width: 800px) {
+  .rights h1 {
+    font-size: calc(var(--base-font-size) * 1.8);
+  }
+
+  .rights h2 {
+    font-size: calc(var(--base-font-size) * 1.6);
+  }
+
+  .rights ol li.list__item--ol::before {
+    font-size: 20px;
+  }
+
+  .rights .rights__content h2 {
+    padding-left: 38px;
+  }
+
+
+  .list-inside, .sublist {
+    margin-left: 0;
+  }
+  
+}
+
+@media screen and (max-width: 460px) {
+  .rights h1 {
+    font-size: calc(var(--base-font-size) * 1.4);
+    text-align: left;
+  }
+
+  .rights h2 {
+    text-align: left;
+    line-height: 1.3;
+    font-size: calc(var(--base-font-size) * 1.4);
+  }
+
+  .rights .rights__content h2 {
+    padding-left: 30px;
+    font-size: calc(var(--base-font-size) * 1.4);
+  }
+
+  .rights .text-center {
+    text-align: left;
+  }
+
+  .rights h2.text-left {
+    padding-left: 0;
+  } 
+
+  .rights__update {
+    text-align: left;
+  }
+
+  .rights ol li.list__item--ol:not(:last-of-type) {
+    margin-bottom: calc(var(--space) * 4);
+  }
+
+  .rights ol li.list__item--ol::before {
+    left: 0px;
+    top: 3px;
+    font-size: 16px;
+  }
+
+  .rights ul {
+    padding-left: calc(var(--space) * 1.1);
+  }
+
+  .rights li {
+    font-size: calc( var(--base-font-size) * 0.9);
+  }
+
+  .rights .list--unordered  {
+    margin-left: 0;
+  }
+
+  .list-inside, .sublist {
+    padding-left: 0;
+  }
+}
+
+
