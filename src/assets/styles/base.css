@@ -56,3 +56,8 @@ img {
 .link {
 	transition: color 0.33s ease-in-out;
 }
+
+.section-blue {
+  padding: var(--space) 0;
+  background-color: rgba(160, 197, 232, 0.21);
+}

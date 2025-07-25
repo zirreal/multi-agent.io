@@ -1085,13 +1085,6 @@ array-iterate@^2.0.0:
   resolved "https://registry.yarnpkg.com/array-iterate/-/array-iterate-2.0.1.tgz#6efd43f8295b3fee06251d3d62ead4bd9805dd24"
   integrity sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==
 
-astro-swiper@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/astro-swiper/-/astro-swiper-1.0.0.tgz#c7720c66bcafbda307496fe128ab56cfffab46e1"
-  integrity sha512-JYBYCxzWlyL/NFAWs1g7M4XL45iUKkvQZyKJRbaoGezK7H3gnPhQ8QOTOEftjn7eptMPH6O0BJgyiOfGpOcrWw==
-  dependencies:
-    swiper "^11.2.8"
-
 astro@^5.9.4:
   version "5.9.4"
   resolved "https://registry.yarnpkg.com/astro/-/astro-5.9.4.tgz#ccb13b1d5ab691e146bbb70537e0e94b9dbb1f85"
@@ -3020,11 +3013,6 @@ superjson@^2.2.2:
   integrity sha512-5JRxVqC8I8NuOUjzBbvVJAKNM8qoVuH0O77h4WInc/qC2q5IreqKxYwgkga3PfA22OayK2ikceb/B26dztPl+Q==
   dependencies:
     copy-anything "^3.0.2"
-
-swiper@^11.2.8:
-  version "11.2.8"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.2.8.tgz#2b5d7da3093454c0a7bf090f1714fb4332142702"
-  integrity sha512-S5FVf6zWynPWooi7pJ7lZhSUe2snTzqLuUzbd5h5PHUOhzgvW0bLKBd2wv0ixn6/5o9vwc/IkQT74CRcLJQzeg==
 
 tiny-inflate@^1.0.0, tiny-inflate@^1.0.3:
   version "1.0.3"
