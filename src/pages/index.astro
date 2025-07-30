@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 
 import IOT from '../assets/img/multi-agent-systems.webp';
+import ALTRUISTS from '../assets/img/altruist.webp';
 ---
 
 <Layout
@@ -15,12 +16,16 @@ import IOT from '../assets/img/multi-agent-systems.webp';
   <section class="mas">
     <div class="layout">
       <h1>Мультиагентные системы -</h1>
-      <div class="wrapper"> 
+      <div class="wrapper wrapper-with-img"> 
         <p class="title-blue mas__descr">
           <span class="title-blue--light">Это команда профессионалов с многолетним опытом в IoT и умных домах.</span> <b>Мы знаем, как сделать домашнюю жизнь комфортнее, эстетичнее и безопаснее.</b></p>
         <div class="decor-image">
           <Image src={IOT} alt="iot solutions"/>
         </div>
+      </div>
+
+      <div class="altruists">
+        <Image src={ALTRUISTS} alt="гражданская станция Альтруист"/>
       </div>
 
       <div class="wrapper"> 
@@ -37,17 +42,33 @@ import IOT from '../assets/img/multi-agent-systems.webp';
 
 <style>
   h1 {
-    margin-bottom: calc(var(--space) * 2);
+    margin-bottom: var(--space);
   }
 
   p {
     margin-bottom: var(--space-half);
   }
 
+  .altruists {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  .altruists img {
+    width: 100%;
+    height: 100%;
+    border: 15px solid #444; 
+    box-shadow:
+      0 0 8px rgba(128, 128, 128, 0.4), 
+      0 4px 12px rgba(0, 0, 0, 0.6);   
+    border-radius: 8px;
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
     gap: var(--space);
     margin-bottom:  calc(var(--space) * 2);
   }
@@ -65,6 +86,27 @@ import IOT from '../assets/img/multi-agent-systems.webp';
    box-shadow: -1px 0px 3px 0 #fff;
   }
 
+  .wrapper-with-img {
+    min-height: 650px
+  }
+
+  .mas .decor-image {
+    max-width: 700px;
+    width: 100%;
+    min-height: 60vh;
+    height: 100%;
+  }
+
+  .mas .decor-image img {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    bottom: 0;
+    width: 50vw; 
+    object-fit: cover;
+    z-index: 0;
+  }
+
 
   .mas__feecc {
     max-width: 1200px;
@@ -72,19 +114,46 @@ import IOT from '../assets/img/multi-agent-systems.webp';
     font-variation-settings: var(--font-flex-medium);
   }
 
-   .mas__feecc a {
-    font-variation-settings: var(--font-flex-medium);
-   }
+  .mas__feecc a {
+  font-variation-settings: var(--font-flex-medium);
+  }
 
-    .mas__feecc a:hover {
-      color: var(--text-accent)
-    }
+  .mas__feecc a:hover {
+    color: var(--text-accent)
+  }
+
   /* media queries */
+
+  @media screen and (max-width: 1200px) {
+    .wrapper-with-img {
+      min-height: unset;
+    }
+  }
 
   @media screen and (max-width: 860px) {
     .wrapper {
       grid-template-columns:  1fr;
     }
+
+    .altruists {
+      width: 100%
+    }
+
+    .altruists img {
+      width: calc(100% - 30px)
+    }
+
+
+    .mas .decor-image {
+      max-width: unset;
+      min-height: unset;
+    }
+
+    .mas .decor-image img {
+      position: static;
+      width: 100%;
+    }
+
   }
 
   @media screen and (max-width: 460px) {

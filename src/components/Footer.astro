@@ -13,8 +13,16 @@ const props: FooterProps = {
 
 <footer class="footer">
   <div class="layout">
-    <div class="copyright">© {props.companyName} {props.year}</div>
-    <a class="underline" href="mailto:general@multi-agent.io">general@multi-agent.io</a>
+    <div class="contacts__address">
+      <div class="copyright">© {props.companyName} {props.year}</div>
+      <address>
+        <span>195299, г. Санкт-Петербург,</span>
+        <span>ул. Киришская, д. 2, литера А,</span>
+        <span>помещ. 2-Н, каб. К18-3.</span>
+        <span>ИНН/ОГРН: 7840097350/1217800127050</span>
+      </address>
+      </div>
+    <a class="underline" href="mailto:general@multi-agent.io" aria-label="свяжитесь с нами по email">general@multi-agent.io</a>
   </div>
 </footer>
 
@@ -28,18 +36,41 @@ const props: FooterProps = {
   .footer .layout {
     display: flex;
     justify-content: space-between;
+    font-variation-settings:  'wght' 400, 'wdth' 148, 'opsz' 32, 'XTRA' 520, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
     gap: var(--space);
   }
 
   .copyright {
-    font-variation-settings:  'wght' 400, 'wdth' 148, 'opsz' 32, 'XTRA' 520, 'XOPQ' 96, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
     color: var(--color-dark);
+    margin-bottom: calc(var(--space) * 0.5);
+  }
+
+  .contacts__address {
+    font-variation-settings: var(--font-flex-light);
+    margin-bottom: calc(var(--space) * 2);
+  }
+
+  .contacts__address address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    gap: calc(var(--space-half) * 0.5);
+  }
+
+  .footer .layout a {
+    display: inline;
+    height: 100%;
   }
   
 
   @media screen and (max-width: 800px) {
     .footer .layout {
+      display: inline-flex;
       flex-direction: column;
+    }
+
+    .contacts__address {
+      margin-bottom: 0;
     }
   }
 </style>
