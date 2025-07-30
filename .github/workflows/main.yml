@@ -1,39 +1,40 @@
-name: CI
+name: Multi-Agent
 
 on:
   push:
-    branches:
-      - main
+    branches: ['main']
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: ['20']
+
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          node-version: "14.x"
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'  
 
-      - name: Get yarn cache
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Install packages
+        run: yarn install 
 
-      - name: Cache dependencies
-        uses: actions/cache@v1
+      - name: Run yarn build
+        run: yarn build  
+
+      - name: Add .nojekyll file
+        run: touch dist/.nojekyll
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
-          key: ${{ runner.os }}-website-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-website-
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-        env:
-          FORM_SCRIPT: ${{ secrets.FORM_SCRIPT }}
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
